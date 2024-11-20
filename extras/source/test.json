@@ -1,0 +1,1360 @@
+[
+    {
+        "event": {
+            "action": "Registry object added or deleted (rule: RegistryEvent)",
+            "category": [
+                "configuration",
+                "registry"
+            ],
+            "code": "12",
+            "kind": "event",
+            "module": "sysmon",
+            "provider": "Microsoft-Windows-Sysmon",
+            "type": [
+                "change"
+            ]
+        },
+        "label": 0,
+        "log": {
+            "level": "information"
+        },
+        "message": "Registry object added or deleted:\nRuleName: technique_id=T1003,technique_name=Credential Dumping\nEventType: CreateKey\nProcessGuid: {b1b2c0c2-7efb-6697-4202-000000000600}\nProcessId: 3852\nImage: C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\nTargetObject: HKLM\\System\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\nUser: ws1\\WS Administrator\n",
+        "process": {
+            "executable": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+            "name": "powershell.exe"
+        },
+        "registry": {
+            "hive": "HKLM",
+            "key": "System\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL",
+            "path": "HKLM\\System\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL",
+            "value": "SCHANNEL"
+        },
+        "rule": {
+            "name": "technique_id=T1003,technique_name=Credential Dumping"
+        },
+        "winlog": {
+            "api": "wineventlog",
+            "channel": "Microsoft-Windows-Sysmon/Operational",
+            "event_data": {
+                "EventType": "CreateKey",
+                "TargetObject": "HKLM\\System\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL",
+                "User": "ws1\\WS Administrator"
+            },
+            "event_id": "12",
+            "opcode": "Info",
+            "provider_guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+            "provider_name": "Microsoft-Windows-Sysmon",
+            "task": "Registry object added or deleted (rule: RegistryEvent)",
+            "user": {
+                "domain": "NT AUTHORITY",
+                "identifier": "S-1-5-18",
+                "name": "SYSTEM",
+                "type": "User"
+            },
+            "version": 2
+        },
+        "filename": "0"
+    },
+    {
+        "event": {
+            "action": "Process terminated (rule: ProcessTerminate)",
+            "category": [
+                "process"
+            ],
+            "code": "5",
+            "kind": "event",
+            "module": "sysmon",
+            "provider": "Microsoft-Windows-Sysmon",
+            "type": [
+                "end",
+                "process_end"
+            ]
+        },
+        "label": 0,
+        "log": {
+            "level": "information"
+        },
+        "message": "Process terminated:\nRuleName: -\nProcessGuid: {c6555c30-2240-66b2-b904-000000000800}\nProcessId: 6976\nImage: C:\\Users\\ws administrator\\Downloads\\PSTools\\PsExec.exe\nUser: ws1\\WS Administrator\n",
+        "process": {
+            "executable": "C:\\Users\\ws administrator\\Downloads\\PSTools\\PsExec.exe",
+            "name": "PsExec.exe"
+        },
+        "winlog": {
+            "api": "wineventlog",
+            "channel": "Microsoft-Windows-Sysmon/Operational",
+            "event_data": {
+                "User": "ws1\\WS Administrator"
+            },
+            "event_id": "5",
+            "opcode": "Info",
+            "provider_guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+            "provider_name": "Microsoft-Windows-Sysmon",
+            "task": "Process terminated (rule: ProcessTerminate)",
+            "user": {
+                "domain": "NT AUTHORITY",
+                "identifier": "S-1-5-18",
+                "name": "SYSTEM",
+                "type": "User"
+            },
+            "version": 3
+        },
+        "filename": "27"
+    },
+    {
+        "event": {
+            "action": "Registry object added or deleted (rule: RegistryEvent)",
+            "category": [
+                "configuration",
+                "registry"
+            ],
+            "code": "12",
+            "kind": "event",
+            "module": "sysmon",
+            "provider": "Microsoft-Windows-Sysmon",
+            "type": [
+                "change"
+            ]
+        },
+        "label": 0,
+        "log": {
+            "level": "information"
+        },
+        "message": "Registry object added or deleted:\nRuleName: technique_id=T1543,technique_name=Service Creation\nEventType: CreateKey\nProcessGuid: {859ab013-73e5-6697-1900-000000000600}\nProcessId: 1120\nImage: C:\\Windows\\system32\\svchost.exe\nTargetObject: HKLM\\System\\CurrentControlSet\\Services\\W32Time\\Config\\Status\nUser: NT AUTHORITY\\LOCAL SERVICE\n",
+        "process": {
+            "executable": "C:\\Windows\\system32\\svchost.exe",
+            "name": "svchost.exe"
+        },
+        "registry": {
+            "hive": "HKLM",
+            "key": "System\\CurrentControlSet\\Services\\W32Time\\Config\\Status",
+            "path": "HKLM\\System\\CurrentControlSet\\Services\\W32Time\\Config\\Status",
+            "value": "Status"
+        },
+        "rule": {
+            "name": "technique_id=T1543,technique_name=Service Creation"
+        },
+        "winlog": {
+            "api": "wineventlog",
+            "channel": "Microsoft-Windows-Sysmon/Operational",
+            "event_data": {
+                "EventType": "CreateKey",
+                "TargetObject": "HKLM\\System\\CurrentControlSet\\Services\\W32Time\\Config\\Status",
+                "User": "NT AUTHORITY\\LOCAL SERVICE"
+            },
+            "event_id": "12",
+            "opcode": "Info",
+            "provider_guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+            "provider_name": "Microsoft-Windows-Sysmon",
+            "task": "Registry object added or deleted (rule: RegistryEvent)",
+            "user": {
+                "domain": "NT AUTHORITY",
+                "identifier": "S-1-5-18",
+                "name": "SYSTEM",
+                "type": "User"
+            },
+            "version": 2
+        },
+        "filename": "10"
+    },
+    {
+        "event": {
+            "action": "Detailed File Share",
+            "code": "5145",
+            "kind": "event",
+            "outcome": "success",
+            "provider": "Microsoft-Windows-Security-Auditing"
+        },
+        "label": 0,
+        "log": {
+            "level": "information"
+        },
+        "message": "A network share object was checked to see whether client can be granted desired access.\n\t\nSubject:\n\tSecurity ID:\t\tS-1-5-18\n\tAccount Name:\t\tweb$\n\tAccount Domain:\t\tMELD\n\tLogon ID:\t\t0x3E7\n\nNetwork Information:\t\n\tObject Type:\t\tFile\n\tSource Address:\t\tfe80::dab:57b6:e48d:702a\n\tSource Port:\t\t50984\n\t\nShare Information:\n\tShare Name:\t\t\\\\*\\ADMIN$\n\tShare Path:\t\t\\??\\C:\\Windows\n\tRelative Target Name:\t25aaa78.exe\n\nAccess Request Information:\n\tAccess Mask:\t\t0x100081\n\tAccesses:\t\tSYNCHRONIZE\n\t\t\t\tReadData (or ListDirectory)\n\t\t\t\tReadAttributes\n\t\t\t\t\nAccess Check Results:\n\t-\n",
+        "winlog": {
+            "api": "wineventlog",
+            "channel": "Security",
+            "event_data": {
+                "AccessList": "%%1541\n\t\t\t\t%%4416\n\t\t\t\t%%4423\n\t\t\t\t",
+                "AccessMask": "0x100081",
+                "AccessReason": "-",
+                "IpAddress": "fe80::dab:57b6:e48d:702a",
+                "IpPort": "50984",
+                "ObjectType": "File",
+                "RelativeTargetName": "25aaa78.exe",
+                "ShareLocalPath": "\\??\\C:\\Windows",
+                "ShareName": "\\\\*\\ADMIN$",
+                "SubjectDomainName": "MELD",
+                "SubjectLogonId": "0x3e7",
+                "SubjectUserName": "web$",
+                "SubjectUserSid": "S-1-5-18"
+            },
+            "event_id": "5145",
+            "keywords": [
+                "Audit Success"
+            ],
+            "opcode": "Info",
+            "provider_guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+            "provider_name": "Microsoft-Windows-Security-Auditing",
+            "task": "Detailed File Share"
+        },
+        "filename": "24"
+    },
+    {
+        "event": {
+            "action": "Other Policy Change Events",
+            "code": "5447",
+            "kind": "event",
+            "outcome": "success",
+            "provider": "Microsoft-Windows-Security-Auditing"
+        },
+        "label": 0,
+        "log": {
+            "level": "information"
+        },
+        "message": "A Windows Filtering Platform filter has been changed.\n\t\nSubject:\n\tSecurity ID:\t\tS-1-5-19\n\tAccount Name:\t\tNT AUTHORITY\\LOCAL SERVICE\n\nProcess Information:\n\tProcess ID:\t1596\n\nProvider Information:\n\tID:\t\t{decc16ca-3f33-4346-be1e-8fb4ae0f3d62}\n\tName:\t\tMicrosoft Corporation\n\nChange Information:\n\tChange Type:\tAdd\n\nFilter Information:\n\tID:\t\t{81170691-613d-40ff-a7ea-5279bb968a26}\n\tName:\t\tCore Networking - Internet Group Management Protocol (IGMP-In)\n\tType:\t\tNot persistent\n\tRun-Time ID:\t70737\n\nLayer Information:\n\tID:\t\t{e1cd9fe7-f4b5-4273-96c0-592e487b8650}\n\tName:\t\tALE Receive/Accept v4 Layer\n\tRun-Time ID:\t44\n\nCallout Information:\n\tID:\t\t{00000000-0000-0000-0000-000000000000}\n\tName:\t\t-\n\nAdditional Information:\n\tWeight:\t10377982941077700608\t\n\tConditions:\t\n\tCondition ID:\t{d78e1e87-8644-4ea5-9437-d809ecefc971}\n\tMatch value:\tEqual to\n\tCondition value:\t\n    00000000  53 00 79 00 73 00 74 00-65 00 6d 00 00 00        S.y.s.t.e.m...\n\n\n\tCondition ID:\t{3971ef2b-623e-4f9a-8cb1-6e79b806b9a7}\n\tMatch value:\tEqual to\n\tCondition value:\t0x02\n\n\tFilter Action:\tPermit\n",
+        "winlog": {
+            "activity_id": "{ea50760d-377f-0001-ef09-68fad5e7da01}",
+            "api": "wineventlog",
+            "channel": "Security",
+            "event_data": {
+                "Action": "%%16390",
+                "CalloutKey": "{00000000-0000-0000-0000-000000000000}",
+                "CalloutName": "-",
+                "ChangeType": "%%16384",
+                "Conditions": "\n\tCondition ID:\t{d78e1e87-8644-4ea5-9437-d809ecefc971}\n\tMatch value:\tEqual to\n\tCondition value:\t\n    00000000  53 00 79 00 73 00 74 00-65 00 6d 00 00 00        S.y.s.t.e.m...\n\n\n\tCondition ID:\t{3971ef2b-623e-4f9a-8cb1-6e79b806b9a7}\n\tMatch value:\tEqual to\n\tCondition value:\t0x02",
+                "FilterId": "70737",
+                "FilterKey": "{81170691-613d-40ff-a7ea-5279bb968a26}",
+                "FilterName": "Core Networking - Internet Group Management Protocol (IGMP-In)",
+                "FilterType": "%%16388",
+                "LayerId": "44",
+                "LayerKey": "{e1cd9fe7-f4b5-4273-96c0-592e487b8650}",
+                "LayerName": "ALE Receive/Accept v4 Layer",
+                "ProcessId": "1596",
+                "ProviderKey": "{decc16ca-3f33-4346-be1e-8fb4ae0f3d62}",
+                "ProviderName": "Microsoft Corporation",
+                "UserName": "NT AUTHORITY\\LOCAL SERVICE",
+                "UserSid": "S-1-5-19",
+                "Weight": "10377982941077700608"
+            },
+            "event_id": "5447",
+            "keywords": [
+                "Audit Success"
+            ],
+            "opcode": "Info",
+            "provider_guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+            "provider_name": "Microsoft-Windows-Security-Auditing",
+            "task": "Other Policy Change Events"
+        },
+        "filename": "18"
+    },
+    {
+        "event": {
+            "action": "File System",
+            "code": "4664",
+            "kind": "event",
+            "outcome": "success",
+            "provider": "Microsoft-Windows-Security-Auditing"
+        },
+        "label": 0,
+        "log": {
+            "level": "information"
+        },
+        "message": "An attempt was made to create a hard link.\n\nSubject:\n\tAccount Name:\t\tS-1-5-18\n\tAccount Name:\t\tws2$\n\tAccount Domain:\t\tMELD\n\tLogon ID:\t\t0x3E7\n\nLink Information:\n\tFile Name:\tC:\\Program Files\\WindowsApps\\Microsoft.WebMediaExtensions_1.0.20875.0_x64__8wekyb3d8bbwe\\Assets\\AppList.targetsize-48.png\n\tLink Name:\tC:\\Program Files\\WindowsApps\\Microsoft.WebMediaExtensions_1.1.1295.0_x64__8wekyb3d8bbwe\\Assets\\contrast-black\\AppList.targetsize-48_contrast-black.png\n\tTransaction ID:\t{00000000-0000-0000-0000-000000000000}\n",
+        "winlog": {
+            "api": "wineventlog",
+            "channel": "Security",
+            "event_data": {
+                "FileName": "C:\\Program Files\\WindowsApps\\Microsoft.WebMediaExtensions_1.0.20875.0_x64__8wekyb3d8bbwe\\Assets\\AppList.targetsize-48.png",
+                "LinkName": "C:\\Program Files\\WindowsApps\\Microsoft.WebMediaExtensions_1.1.1295.0_x64__8wekyb3d8bbwe\\Assets\\contrast-black\\AppList.targetsize-48_contrast-black.png",
+                "SubjectDomainName": "MELD",
+                "SubjectLogonId": "0x3e7",
+                "SubjectUserName": "ws2$",
+                "SubjectUserSid": "S-1-5-18",
+                "TransactionId": "{00000000-0000-0000-0000-000000000000}"
+            },
+            "event_id": "4664",
+            "keywords": [
+                "Audit Success"
+            ],
+            "opcode": "Info",
+            "provider_guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+            "provider_name": "Microsoft-Windows-Security-Auditing",
+            "task": "File System"
+        },
+        "filename": "6"
+    },
+    {
+        "event": {
+            "action": "Other Policy Change Events",
+            "code": "5447",
+            "kind": "event",
+            "outcome": "success",
+            "provider": "Microsoft-Windows-Security-Auditing"
+        },
+        "label": 0,
+        "log": {
+            "level": "information"
+        },
+        "message": "A Windows Filtering Platform filter has been changed.\n\t\nSubject:\n\tSecurity ID:\t\tS-1-5-19\n\tAccount Name:\t\tNT AUTHORITY\\LOCAL SERVICE\n\nProcess Information:\n\tProcess ID:\t1800\n\nProvider Information:\n\tID:\t\t{decc16ca-3f33-4346-be1e-8fb4ae0f3d62}\n\tName:\t\t@bfe.dll,-1211\n\nChange Information:\n\tChange Type:\tAdd\n\nFilter Information:\n\tID:\t\t{cad61230-dd35-422b-bb29-be92b9f4d0e4}\n\tName:\t\tMicrosoft Store\n\tType:\t\tNot persistent\n\tRun-Time ID:\t72642\n\nLayer Information:\n\tID:\t\t{7ac9de24-17dd-4814-b4bd-a9fbc95a321b}\n\tName:\t\tALE Listen v6 Layer\n\tRun-Time ID:\t42\n\nCallout Information:\n\tID:\t\t{81a434e7-f60c-4378-bab8-c625a30f0197}\n\tName:\t\tWFP Built-in Edge Traversal ALE Listen v6 Layer Callout\n\nAdditional Information:\n\tWeight:\t10376293541461622976\t\n\tConditions:\t\n\tCondition ID:\t{71bc78fa-f17c-4997-a602-6abb261f351c}\n\tMatch value:\tEqual to\n\tCondition value:\t-\n\n\tCondition ID:\t{af043a0a-b34d-4f86-979c-c90371af6e66}\n\tMatch value:\tEqual to\n\tCondition value:\t\nO:SYG:SYD:(A;;CCRC;;;S-1-5-21-981878584-487602356-1169203714-500)(A;;CCRC;;;AC)(A;;CCRC;;;S-1-15-3-1)(A;;CCRC;;;S-1-15-3-2)(A;;CCRC;;;S-1-15-3-3)(A;;CCRC;;;S-1-15-3-4214768333-1334025770-122408079-3919188833)\n\n\n\tFilter Action:\tCallout\n",
+        "winlog": {
+            "activity_id": "{458d2c95-badf-0000-5de0-b165d6e7da01}",
+            "api": "wineventlog",
+            "channel": "Security",
+            "event_data": {
+                "Action": "%%16391",
+                "CalloutKey": "{81a434e7-f60c-4378-bab8-c625a30f0197}",
+                "CalloutName": "WFP Built-in Edge Traversal ALE Listen v6 Layer Callout",
+                "ChangeType": "%%16384",
+                "Conditions": "\n\tCondition ID:\t{71bc78fa-f17c-4997-a602-6abb261f351c}\n\tMatch value:\tEqual to\n\tCondition value:\t-\n\n\tCondition ID:\t{af043a0a-b34d-4f86-979c-c90371af6e66}\n\tMatch value:\tEqual to\n\tCondition value:\t\nO:SYG:SYD:(A;;CCRC;;;S-1-5-21-981878584-487602356-1169203714-500)(A;;CCRC;;;AC)(A;;CCRC;;;S-1-15-3-1)(A;;CCRC;;;S-1-15-3-2)(A;;CCRC;;;S-1-15-3-3)(A;;CCRC;;;S-1-15-3-4214768333-1334025770-122408079-3919188833)",
+                "FilterId": "72642",
+                "FilterKey": "{cad61230-dd35-422b-bb29-be92b9f4d0e4}",
+                "FilterName": "Microsoft Store",
+                "FilterType": "%%16388",
+                "LayerId": "42",
+                "LayerKey": "{7ac9de24-17dd-4814-b4bd-a9fbc95a321b}",
+                "LayerName": "ALE Listen v6 Layer",
+                "ProcessId": "1800",
+                "ProviderKey": "{decc16ca-3f33-4346-be1e-8fb4ae0f3d62}",
+                "ProviderName": "@bfe.dll,-1211",
+                "UserName": "NT AUTHORITY\\LOCAL SERVICE",
+                "UserSid": "S-1-5-19",
+                "Weight": "10376293541461622976"
+            },
+            "event_id": "5447",
+            "keywords": [
+                "Audit Success"
+            ],
+            "opcode": "Info",
+            "provider_guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+            "provider_name": "Microsoft-Windows-Security-Auditing",
+            "task": "Other Policy Change Events"
+        },
+        "filename": "19"
+    },
+    {
+        "event": {
+            "action": "Registry object added or deleted (rule: RegistryEvent)",
+            "category": [
+                "configuration",
+                "registry"
+            ],
+            "code": "12",
+            "kind": "event",
+            "module": "sysmon",
+            "provider": "Microsoft-Windows-Sysmon",
+            "type": [
+                "change"
+            ]
+        },
+        "label": 0,
+        "log": {
+            "level": "information"
+        },
+        "message": "Registry object added or deleted:\nRuleName: technique_id=T1543,technique_name=Service Creation\nEventType: CreateKey\nProcessGuid: {55a8266f-d71c-66b1-2100-000000000700}\nProcessId: 1596\nImage: C:\\Windows\\system32\\svchost.exe\nTargetObject: HKLM\\System\\CurrentControlSet\\Services\\SharedAccess\\Parameters\\FirewallPolicy\\RestrictedServices\\AppIso\\FirewallRules\nUser: NT AUTHORITY\\LOCAL SERVICE\n",
+        "process": {
+            "executable": "C:\\Windows\\system32\\svchost.exe",
+            "name": "svchost.exe"
+        },
+        "registry": {
+            "hive": "HKLM",
+            "key": "System\\CurrentControlSet\\Services\\SharedAccess\\Parameters\\FirewallPolicy\\RestrictedServices\\AppIso\\FirewallRules",
+            "path": "HKLM\\System\\CurrentControlSet\\Services\\SharedAccess\\Parameters\\FirewallPolicy\\RestrictedServices\\AppIso\\FirewallRules",
+            "value": "FirewallRules"
+        },
+        "rule": {
+            "name": "technique_id=T1543,technique_name=Service Creation"
+        },
+        "winlog": {
+            "api": "wineventlog",
+            "channel": "Microsoft-Windows-Sysmon/Operational",
+            "event_data": {
+                "EventType": "CreateKey",
+                "TargetObject": "HKLM\\System\\CurrentControlSet\\Services\\SharedAccess\\Parameters\\FirewallPolicy\\RestrictedServices\\AppIso\\FirewallRules",
+                "User": "NT AUTHORITY\\LOCAL SERVICE"
+            },
+            "event_id": "12",
+            "opcode": "Info",
+            "provider_guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+            "provider_name": "Microsoft-Windows-Sysmon",
+            "task": "Registry object added or deleted (rule: RegistryEvent)",
+            "user": {
+                "domain": "NT AUTHORITY",
+                "identifier": "S-1-5-18",
+                "name": "SYSTEM",
+                "type": "User"
+            },
+            "version": 2
+        },
+        "filename": "26"
+    },
+    {
+        "event": {
+            "action": "Other Policy Change Events",
+            "code": "5447",
+            "kind": "event",
+            "outcome": "success",
+            "provider": "Microsoft-Windows-Security-Auditing"
+        },
+        "label": 0,
+        "log": {
+            "level": "information"
+        },
+        "message": "A Windows Filtering Platform filter has been changed.\n\t\nSubject:\n\tSecurity ID:\t\tS-1-5-19\n\tAccount Name:\t\tNT AUTHORITY\\LOCAL SERVICE\n\nProcess Information:\n\tProcess ID:\t1800\n\nProvider Information:\n\tID:\t\t{decc16ca-3f33-4346-be1e-8fb4ae0f3d62}\n\tName:\t\t@bfe.dll,-1211\n\nChange Information:\n\tChange Type:\tDelete\n\nFilter Information:\n\tID:\t\t{1391d8f3-0a4c-43e7-85f6-262f900e2e2f}\n\tName:\t\tQuery User\n\tType:\t\tNot persistent\n\tRun-Time ID:\t72719\n\nLayer Information:\n\tID:\t\t{65f9bdff-3b2d-4e5d-b8c6-c720651fe898}\n\tName:\t\tInbound ICMP Error v6 Layer\n\tRun-Time ID:\t30\n\nCallout Information:\n\tID:\t\t{00000000-0000-0000-0000-000000000000}\n\tName:\t\t-\n\nAdditional Information:\n\tWeight:\t3458764513820540928\t\n\tConditions:\t-\n\tFilter Action:\tBlock\n",
+        "winlog": {
+            "activity_id": "{458d2c95-badf-0000-5de0-b165d6e7da01}",
+            "api": "wineventlog",
+            "channel": "Security",
+            "event_data": {
+                "Action": "%%16389",
+                "CalloutKey": "{00000000-0000-0000-0000-000000000000}",
+                "CalloutName": "-",
+                "ChangeType": "%%16385",
+                "Conditions": "-",
+                "FilterId": "72719",
+                "FilterKey": "{1391d8f3-0a4c-43e7-85f6-262f900e2e2f}",
+                "FilterName": "Query User",
+                "FilterType": "%%16388",
+                "LayerId": "30",
+                "LayerKey": "{65f9bdff-3b2d-4e5d-b8c6-c720651fe898}",
+                "LayerName": "Inbound ICMP Error v6 Layer",
+                "ProcessId": "1800",
+                "ProviderKey": "{decc16ca-3f33-4346-be1e-8fb4ae0f3d62}",
+                "ProviderName": "@bfe.dll,-1211",
+                "UserName": "NT AUTHORITY\\LOCAL SERVICE",
+                "UserSid": "S-1-5-19",
+                "Weight": "3458764513820540928"
+            },
+            "event_id": "5447",
+            "keywords": [
+                "Audit Success"
+            ],
+            "opcode": "Info",
+            "provider_guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+            "provider_name": "Microsoft-Windows-Security-Auditing",
+            "task": "Other Policy Change Events"
+        },
+        "filename": "20"
+    },
+    {
+        "event": {
+            "action": "File created (rule: FileCreate)",
+            "category": [
+                "file"
+            ],
+            "code": "11",
+            "kind": "event",
+            "module": "sysmon",
+            "provider": "Microsoft-Windows-Sysmon",
+            "type": [
+                "creation"
+            ]
+        },
+        "file": {
+            "directory": "C:\\Users\\LAB Administrator\\Desktop\\mimikatz-master\\debian",
+            "name": "compat",
+            "path": "C:\\Users\\LAB Administrator\\Desktop\\mimikatz-master\\debian\\compat"
+        },
+        "label": 0,
+        "log": {
+            "level": "information"
+        },
+        "message": "File created:\nRuleName: -\nProcessGuid: {c6555c30-97cb-66b0-7801-000000000700}\nProcessId: 8168\nImage: C:\\Windows\\Explorer.EXE\nTargetFilename: C:\\Users\\LAB Administrator\\Desktop\\mimikatz-master\\debian\\compat\nUser: MELD\\LAB Administrator\n",
+        "process": {
+            "executable": "C:\\Windows\\Explorer.EXE",
+            "name": "Explorer.EXE"
+        },
+        "winlog": {
+            "api": "wineventlog",
+            "channel": "Microsoft-Windows-Sysmon/Operational",
+            "event_data": {
+                "User": "MELD\\LAB Administrator"
+            },
+            "event_id": "11",
+            "opcode": "Info",
+            "provider_guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+            "provider_name": "Microsoft-Windows-Sysmon",
+            "task": "File created (rule: FileCreate)",
+            "user": {
+                "domain": "NT AUTHORITY",
+                "identifier": "S-1-5-18",
+                "name": "SYSTEM",
+                "type": "User"
+            },
+            "version": 2
+        },
+        "filename": "14"
+    },
+    {
+        "event": {
+            "action": "Other Policy Change Events",
+            "code": "5447",
+            "kind": "event",
+            "outcome": "success",
+            "provider": "Microsoft-Windows-Security-Auditing"
+        },
+        "label": 0,
+        "log": {
+            "level": "information"
+        },
+        "message": "A Windows Filtering Platform filter has been changed.\n\t\nSubject:\n\tSecurity ID:\t\tS-1-5-19\n\tAccount Name:\t\tNT AUTHORITY\\LOCAL SERVICE\n\nProcess Information:\n\tProcess ID:\t1572\n\nProvider Information:\n\tID:\t\t{decc16ca-3f33-4346-be1e-8fb4ae0f3d62}\n\tName:\t\tMicrosoft Corporation\n\nChange Information:\n\tChange Type:\tAdd\n\nFilter Information:\n\tID:\t\t{6d33cc6a-d764-4e45-83be-f1f69d9cda00}\n\tName:\t\tFTP Server Secure (FTP SSL Traffic-In)\n\tType:\t\tNot persistent\n\tRun-Time ID:\t70737\n\nLayer Information:\n\tID:\t\t{88bb5dad-76d7-4227-9c71-df0a3ed7be7e}\n\tName:\t\tALE Listen v4 Layer\n\tRun-Time ID:\t40\n\nCallout Information:\n\tID:\t\t{00000000-0000-0000-0000-000000000000}\n\tName:\t\t-\n\nAdditional Information:\n\tWeight:\t10376293542535364544\t\n\tConditions:\t\n\tCondition ID:\t{d78e1e87-8644-4ea5-9437-d809ecefc971}\n\tMatch value:\tEqual to\n\tCondition value:\t\n    00000000  5c 00 64 00 65 00 76 00-69 00 63 00 65 00 5c 00  \\.d.e.v.i.c.e.\\.\n    00000010  68 00 61 00 72 00 64 00-64 00 69 00 73 00 6b 00  h.a.r.d.d.i.s.k.\n    00000020  76 00 6f 00 6c 00 75 00-6d 00 65 00 34 00 5c 00  v.o.l.u.m.e.4.\\.\n    00000030  77 00 69 00 6e 00 64 00-6f 00 77 00 73 00 5c 00  w.i.n.d.o.w.s.\\.\n    00000040  73 00 79 00 73 00 74 00-65 00 6d 00 33 00 32 00  s.y.s.t.e.m.3.2.\n    00000050  5c 00 73 00 76 00 63 00-68 00 6f 00 73 00 74 00  \\.s.v.c.h.o.s.t.\n    00000060  2e 00 65 00 78 00 65 00-00 00                    ..e.x.e...\n\n\n\tCondition ID:\t{af043a0a-b34d-4f86-979c-c90371af6e66}\n\tMatch value:\tEqual to\n\tCondition value:\t\nO:SYG:SYD:(A;;CCRC;;;S-1-5-80-1742929452-363087606-4062475001-1529410099-2278924282)\n\n\n\tCondition ID:\t{0c1ba1af-5765-453f-af22-a8f791ac775b}\n\tMatch value:\tEqual to\n\tCondition value:\t0x03de\n\n\tFilter Action:\tPermit\n",
+        "winlog": {
+            "activity_id": "{e473deab-76a5-0001-ae45-93951bd8da01}",
+            "api": "wineventlog",
+            "channel": "Security",
+            "event_data": {
+                "Action": "%%16390",
+                "CalloutKey": "{00000000-0000-0000-0000-000000000000}",
+                "CalloutName": "-",
+                "ChangeType": "%%16384",
+                "Conditions": "\n\tCondition ID:\t{d78e1e87-8644-4ea5-9437-d809ecefc971}\n\tMatch value:\tEqual to\n\tCondition value:\t\n    00000000  5c 00 64 00 65 00 76 00-69 00 63 00 65 00 5c 00  \\.d.e.v.i.c.e.\\.\n    00000010  68 00 61 00 72 00 64 00-64 00 69 00 73 00 6b 00  h.a.r.d.d.i.s.k.\n    00000020  76 00 6f 00 6c 00 75 00-6d 00 65 00 34 00 5c 00  v.o.l.u.m.e.4.\\.\n    00000030  77 00 69 00 6e 00 64 00-6f 00 77 00 73 00 5c 00  w.i.n.d.o.w.s.\\.\n    00000040  73 00 79 00 73 00 74 00-65 00 6d 00 33 00 32 00  s.y.s.t.e.m.3.2.\n    00000050  5c 00 73 00 76 00 63 00-68 00 6f 00 73 00 74 00  \\.s.v.c.h.o.s.t.\n    00000060  2e 00 65 00 78 00 65 00-00 00                    ..e.x.e...\n\n\n\tCondition ID:\t{af043a0a-b34d-4f86-979c-c90371af6e66}\n\tMatch value:\tEqual to\n\tCondition value:\t\nO:SYG:SYD:(A;;CCRC;;;S-1-5-80-1742929452-363087606-4062475001-1529410099-2278924282)\n\n\n\tCondition ID:\t{0c1ba1af-5765-453f-af22-a8f791ac775b}\n\tMatch value:\tEqual to\n\tCondition value:\t0x03de",
+                "FilterId": "70737",
+                "FilterKey": "{6d33cc6a-d764-4e45-83be-f1f69d9cda00}",
+                "FilterName": "FTP Server Secure (FTP SSL Traffic-In)",
+                "FilterType": "%%16388",
+                "LayerId": "40",
+                "LayerKey": "{88bb5dad-76d7-4227-9c71-df0a3ed7be7e}",
+                "LayerName": "ALE Listen v4 Layer",
+                "ProcessId": "1572",
+                "ProviderKey": "{decc16ca-3f33-4346-be1e-8fb4ae0f3d62}",
+                "ProviderName": "Microsoft Corporation",
+                "UserName": "NT AUTHORITY\\LOCAL SERVICE",
+                "UserSid": "S-1-5-19",
+                "Weight": "10376293542535364544"
+            },
+            "event_id": "5447",
+            "keywords": [
+                "Audit Success"
+            ],
+            "opcode": "Info",
+            "provider_guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+            "provider_name": "Microsoft-Windows-Security-Auditing",
+            "task": "Other Policy Change Events"
+        },
+        "filename": "3"
+    },
+    {
+        "event": {
+            "action": "Other Policy Change Events",
+            "code": "5447",
+            "kind": "event",
+            "outcome": "success",
+            "provider": "Microsoft-Windows-Security-Auditing"
+        },
+        "label": 0,
+        "log": {
+            "level": "information"
+        },
+        "message": "A Windows Filtering Platform filter has been changed.\n\t\nSubject:\n\tSecurity ID:\t\tS-1-5-19\n\tAccount Name:\t\tNT AUTHORITY\\LOCAL SERVICE\n\nProcess Information:\n\tProcess ID:\t1800\n\nProvider Information:\n\tID:\t\t{decc16ca-3f33-4346-be1e-8fb4ae0f3d62}\n\tName:\t\t@bfe.dll,-1211\n\nChange Information:\n\tChange Type:\tAdd\n\nFilter Information:\n\tID:\t\t{20f626f5-440d-4b60-bc65-e9a44acab52e}\n\tName:\t\tNetwork Discovery (WSD-In)\n\tType:\t\tNot persistent\n\tRun-Time ID:\t73681\n\nLayer Information:\n\tID:\t\t{1247d66d-0b60-4a15-8d44-7155d0f53a0c}\n\tName:\t\tALE Resource Assignment v4 Layer\n\tRun-Time ID:\t36\n\nCallout Information:\n\tID:\t\t{00000000-0000-0000-0000-000000000000}\n\tName:\t\t-\n\nAdditional Information:\n\tWeight:\t11528792764883927040\t\n\tConditions:\t\n\tCondition ID:\t{d78e1e87-8644-4ea5-9437-d809ecefc971}\n\tMatch value:\tEqual to\n\tCondition value:\t\n    00000000  5c 00 64 00 65 00 76 00-69 00 63 00 65 00 5c 00  \\.d.e.v.i.c.e.\\.\n    00000010  68 00 61 00 72 00 64 00-64 00 69 00 73 00 6b 00  h.a.r.d.d.i.s.k.\n    00000020  76 00 6f 00 6c 00 75 00-6d 00 65 00 34 00 5c 00  v.o.l.u.m.e.4.\\.\n    00000030  77 00 69 00 6e 00 64 00-6f 00 77 00 73 00 5c 00  w.i.n.d.o.w.s.\\.\n    00000040  73 00 79 00 73 00 74 00-65 00 6d 00 33 00 32 00  s.y.s.t.e.m.3.2.\n    00000050  5c 00 73 00 76 00 63 00-68 00 6f 00 73 00 74 00  \\.s.v.c.h.o.s.t.\n    00000060  2e 00 65 00 78 00 65 00-00 00                    ..e.x.e...\n\n\n\tCondition ID:\t{af043a0a-b34d-4f86-979c-c90371af6e66}\n\tMatch value:\tEqual to\n\tCondition value:\t\nO:SYG:SYD:(A;;CCRC;;;S-1-5-80-364023826-931424190-487969545-1024119571-74567675)\n\n\n\tCondition ID:\t{0c1ba1af-5765-453f-af22-a8f791ac775b}\n\tMatch value:\tEqual to\n\tCondition value:\t0x0e76\n\n\tCondition ID:\t{3971ef2b-623e-4f9a-8cb1-6e79b806b9a7}\n\tMatch value:\tEqual to\n\tCondition value:\t0x11\n\n\tFilter Action:\tPermit\n",
+        "winlog": {
+            "activity_id": "{458d2c95-badf-0000-5de0-b165d6e7da01}",
+            "api": "wineventlog",
+            "channel": "Security",
+            "event_data": {
+                "Action": "%%16390",
+                "CalloutKey": "{00000000-0000-0000-0000-000000000000}",
+                "CalloutName": "-",
+                "ChangeType": "%%16384",
+                "Conditions": "\n\tCondition ID:\t{d78e1e87-8644-4ea5-9437-d809ecefc971}\n\tMatch value:\tEqual to\n\tCondition value:\t\n    00000000  5c 00 64 00 65 00 76 00-69 00 63 00 65 00 5c 00  \\.d.e.v.i.c.e.\\.\n    00000010  68 00 61 00 72 00 64 00-64 00 69 00 73 00 6b 00  h.a.r.d.d.i.s.k.\n    00000020  76 00 6f 00 6c 00 75 00-6d 00 65 00 34 00 5c 00  v.o.l.u.m.e.4.\\.\n    00000030  77 00 69 00 6e 00 64 00-6f 00 77 00 73 00 5c 00  w.i.n.d.o.w.s.\\.\n    00000040  73 00 79 00 73 00 74 00-65 00 6d 00 33 00 32 00  s.y.s.t.e.m.3.2.\n    00000050  5c 00 73 00 76 00 63 00-68 00 6f 00 73 00 74 00  \\.s.v.c.h.o.s.t.\n    00000060  2e 00 65 00 78 00 65 00-00 00                    ..e.x.e...\n\n\n\tCondition ID:\t{af043a0a-b34d-4f86-979c-c90371af6e66}\n\tMatch value:\tEqual to\n\tCondition value:\t\nO:SYG:SYD:(A;;CCRC;;;S-1-5-80-364023826-931424190-487969545-1024119571-74567675)\n\n\n\tCondition ID:\t{0c1ba1af-5765-453f-af22-a8f791ac775b}\n\tMatch value:\tEqual to\n\tCondition value:\t0x0e76\n\n\tCondition ID:\t{3971ef2b-623e-4f9a-8cb1-6e79b806b9a7}\n\tMatch value:\tEqual to\n\tCondition value:\t0x11",
+                "FilterId": "73681",
+                "FilterKey": "{20f626f5-440d-4b60-bc65-e9a44acab52e}",
+                "FilterName": "Network Discovery (WSD-In)",
+                "FilterType": "%%16388",
+                "LayerId": "36",
+                "LayerKey": "{1247d66d-0b60-4a15-8d44-7155d0f53a0c}",
+                "LayerName": "ALE Resource Assignment v4 Layer",
+                "ProcessId": "1800",
+                "ProviderKey": "{decc16ca-3f33-4346-be1e-8fb4ae0f3d62}",
+                "ProviderName": "@bfe.dll,-1211",
+                "UserName": "NT AUTHORITY\\LOCAL SERVICE",
+                "UserSid": "S-1-5-19",
+                "Weight": "11528792764883927040"
+            },
+            "event_id": "5447",
+            "keywords": [
+                "Audit Success"
+            ],
+            "opcode": "Info",
+            "provider_guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+            "provider_name": "Microsoft-Windows-Security-Auditing",
+            "task": "Other Policy Change Events"
+        },
+        "filename": "21"
+    },
+    {
+        "event": {
+            "action": "File stream created (rule: FileCreateStreamHash)",
+            "category": [
+                "file"
+            ],
+            "code": "15",
+            "kind": "event",
+            "module": "sysmon",
+            "provider": "Microsoft-Windows-Sysmon",
+            "type": [
+                "access"
+            ]
+        },
+        "file": {
+            "directory": "C:\\Users\\LAB Administrator\\Desktop\\mimikatz-master\\debian",
+            "extension": "Identifier",
+            "hash": {
+                "md5": "63af790009bc0a473a03745545872082",
+                "sha1": "11c707b0019ddbcc204b85d5a50c14610b86c5f2",
+                "sha256": "0861a7d0d237f9deffaaa29f57e59f75ec6e798bc3ad9c06afd4db820ee14450"
+            },
+            "name": "control:Zone.Identifier",
+            "path": "C:\\Users\\LAB Administrator\\Desktop\\mimikatz-master\\debian\\control:Zone.Identifier"
+        },
+        "hash": {
+            "md5": "63af790009bc0a473a03745545872082",
+            "sha1": "11c707b0019ddbcc204b85d5a50c14610b86c5f2",
+            "sha256": "0861a7d0d237f9deffaaa29f57e59f75ec6e798bc3ad9c06afd4db820ee14450"
+        },
+        "label": 0,
+        "log": {
+            "level": "information"
+        },
+        "message": "File stream created:\nRuleName: technique_id=T1189,technique_name=Drive-by Compromise\nProcessGuid: {c6555c30-97cb-66b0-7801-000000000700}\nProcessId: 8168\nImage: C:\\Windows\\Explorer.EXE\nTargetFilename: C:\\Users\\LAB Administrator\\Desktop\\mimikatz-master\\debian\\control:Zone.Identifier\nHash: SHA1=11C707B0019DDBCC204B85D5A50C14610B86C5F2,MD5=63AF790009BC0A473A03745545872082,SHA256=0861A7D0D237F9DEFFAAA29F57E59F75EC6E798BC3AD9C06AFD4DB820EE14450,IMPHASH=00000000000000000000000000000000\nContents: [ZoneTransfer]  ZoneId=3  ReferrerUrl=C:\\Users\\LAB Administrator\\Downloads\\mimikatz-master.zip  \nUser: MELD\\LAB Administrator\n",
+        "process": {
+            "executable": "C:\\Windows\\Explorer.EXE",
+            "name": "Explorer.EXE"
+        },
+        "related": {
+            "hash": [
+                "11c707b0019ddbcc204b85d5a50c14610b86c5f2",
+                "63af790009bc0a473a03745545872082",
+                "0861a7d0d237f9deffaaa29f57e59f75ec6e798bc3ad9c06afd4db820ee14450"
+            ]
+        },
+        "rule": {
+            "name": "technique_id=T1189,technique_name=Drive-by Compromise"
+        },
+        "winlog": {
+            "api": "wineventlog",
+            "channel": "Microsoft-Windows-Sysmon/Operational",
+            "event_data": {
+                "Contents": "[ZoneTransfer]  ZoneId=3  ReferrerUrl=C:\\Users\\LAB Administrator\\Downloads\\mimikatz-master.zip  ",
+                "User": "MELD\\LAB Administrator"
+            },
+            "event_id": "15",
+            "opcode": "Info",
+            "provider_guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+            "provider_name": "Microsoft-Windows-Sysmon",
+            "task": "File stream created (rule: FileCreateStreamHash)",
+            "user": {
+                "domain": "NT AUTHORITY",
+                "identifier": "S-1-5-18",
+                "name": "SYSTEM",
+                "type": "User"
+            },
+            "version": 2
+        },
+        "filename": "15"
+    },
+    {
+        "event": {
+            "action": "File System",
+            "code": "4664",
+            "kind": "event",
+            "outcome": "success",
+            "provider": "Microsoft-Windows-Security-Auditing"
+        },
+        "label": 0,
+        "log": {
+            "level": "information"
+        },
+        "message": "An attempt was made to create a hard link.\n\nSubject:\n\tAccount Name:\t\tS-1-5-18\n\tAccount Name:\t\tws2$\n\tAccount Domain:\t\tMELD\n\tLogon ID:\t\t0x3E7\n\nLink Information:\n\tFile Name:\tC:\\Program Files\\WindowsApps\\Microsoft.WebpImageExtension_1.0.22753.0_x64__8wekyb3d8bbwe\\Assets\\contrast-black\\StoreLogo.scale-125_contrast-black.png\n\tLink Name:\tC:\\Program Files\\WindowsApps\\Microsoft.WebpImageExtension_1.1.1711.0_x64__8wekyb3d8bbwe\\Assets\\contrast-black\\StoreLogo.scale-125_contrast-black.png\n\tTransaction ID:\t{00000000-0000-0000-0000-000000000000}\n",
+        "winlog": {
+            "api": "wineventlog",
+            "channel": "Security",
+            "event_data": {
+                "FileName": "C:\\Program Files\\WindowsApps\\Microsoft.WebpImageExtension_1.0.22753.0_x64__8wekyb3d8bbwe\\Assets\\contrast-black\\StoreLogo.scale-125_contrast-black.png",
+                "LinkName": "C:\\Program Files\\WindowsApps\\Microsoft.WebpImageExtension_1.1.1711.0_x64__8wekyb3d8bbwe\\Assets\\contrast-black\\StoreLogo.scale-125_contrast-black.png",
+                "SubjectDomainName": "MELD",
+                "SubjectLogonId": "0x3e7",
+                "SubjectUserName": "ws2$",
+                "SubjectUserSid": "S-1-5-18",
+                "TransactionId": "{00000000-0000-0000-0000-000000000000}"
+            },
+            "event_id": "4664",
+            "keywords": [
+                "Audit Success"
+            ],
+            "opcode": "Info",
+            "provider_guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+            "provider_name": "Microsoft-Windows-Security-Auditing",
+            "task": "File System"
+        },
+        "filename": "7"
+    },
+    {
+        "event": {
+            "action": "File System",
+            "code": "4664",
+            "kind": "event",
+            "outcome": "success",
+            "provider": "Microsoft-Windows-Security-Auditing"
+        },
+        "label": 0,
+        "log": {
+            "level": "information"
+        },
+        "message": "An attempt was made to create a hard link.\n\nSubject:\n\tAccount Name:\t\tS-1-5-18\n\tAccount Name:\t\tws2$\n\tAccount Domain:\t\tMELD\n\tLogon ID:\t\t0x3E7\n\nLink Information:\n\tFile Name:\tC:\\Program Files\\WindowsApps\\Microsoft.WindowsAppRuntime.1.5_5001.178.1908.0_x86__8wekyb3d8bbwe\\ml-IN\\Microsoft.UI.Xaml.Phone.dll.mui\n\tLink Name:\tC:\\Program Files\\WindowsApps\\Microsoft.WindowsAppRuntime.1.5_5001.178.1908.0_x64__8wekyb3d8bbwe\\ml-IN\\Microsoft.UI.Xaml.Phone.dll.mui\n\tTransaction ID:\t{00000000-0000-0000-0000-000000000000}\n",
+        "winlog": {
+            "api": "wineventlog",
+            "channel": "Security",
+            "event_data": {
+                "FileName": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsAppRuntime.1.5_5001.178.1908.0_x86__8wekyb3d8bbwe\\ml-IN\\Microsoft.UI.Xaml.Phone.dll.mui",
+                "LinkName": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsAppRuntime.1.5_5001.178.1908.0_x64__8wekyb3d8bbwe\\ml-IN\\Microsoft.UI.Xaml.Phone.dll.mui",
+                "SubjectDomainName": "MELD",
+                "SubjectLogonId": "0x3e7",
+                "SubjectUserName": "ws2$",
+                "SubjectUserSid": "S-1-5-18",
+                "TransactionId": "{00000000-0000-0000-0000-000000000000}"
+            },
+            "event_id": "4664",
+            "keywords": [
+                "Audit Success"
+            ],
+            "opcode": "Info",
+            "provider_guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+            "provider_name": "Microsoft-Windows-Security-Auditing",
+            "task": "File System"
+        },
+        "filename": "13"
+    },
+    {
+        "event": {
+            "action": "Other Policy Change Events",
+            "code": "5447",
+            "kind": "event",
+            "outcome": "success",
+            "provider": "Microsoft-Windows-Security-Auditing"
+        },
+        "label": 0,
+        "log": {
+            "level": "information"
+        },
+        "message": "A Windows Filtering Platform filter has been changed.\n\t\nSubject:\n\tSecurity ID:\t\tS-1-5-19\n\tAccount Name:\t\tNT AUTHORITY\\LOCAL SERVICE\n\nProcess Information:\n\tProcess ID:\t1908\n\nProvider Information:\n\tID:\t\t{decc16ca-3f33-4346-be1e-8fb4ae0f3d62}\n\tName:\t\t@bfe.dll,-1211\n\nChange Information:\n\tChange Type:\tDelete\n\nFilter Information:\n\tID:\t\t{b45f13e5-d3e7-485f-a04b-2b5c0fa527cc}\n\tName:\t\t@{Microsoft.Windows.Photos_2019.19071.12548.0_x64__8wekyb3d8bbwe?ms-resource://Microsoft.Windows.Photos/Resources/AppStoreName}\n\tType:\t\tNot persistent\n\tRun-Time ID:\t72367\n\nLayer Information:\n\tID:\t\t{a3b42c97-9f04-4672-b87e-cee9c483257f}\n\tName:\t\tALE Receive/Accept v6 Layer\n\tRun-Time ID:\t46\n\nCallout Information:\n\tID:\t\t{00000000-0000-0000-0000-000000000000}\n\tName:\t\t-\n\nAdditional Information:\n\tWeight:\t10376293971763658752\t\n\tConditions:\t\n\tCondition ID:\t{71bc78fa-f17c-4997-a602-6abb261f351c}\n\tMatch value:\tEqual to\n\tCondition value:\t-\n\n\tCondition ID:\t{af043a0a-b34d-4f86-979c-c90371af6e66}\n\tMatch value:\tEqual to\n\tCondition value:\t\nO:SYG:SYD:(A;;CCRC;;;LA)(A;;CCRC;;;AC)(A;;CCRC;;;S-1-15-3-1)(A;;CCRC;;;S-1-15-3-2)(A;;CCRC;;;S-1-15-3-3)(A;;CCRC;;;S-1-15-3-4214768333-1334025770-122408079-3919188833)\n\n\n\tCondition ID:\t{97537c6c-d9a3-4767-a381-e942675cd920}\n\tMatch value:\tEqual to\n\tCondition value:\t0x00000083\n\n\tCondition ID:\t{72b1a111-987b-4720-99dd-c7c576fa2d4c}\n\tMatch value:\tEqual to\n\tCondition value:\t0x00000001\n\n\tCondition ID:\t{632ce23b-5167-435c-86d7-e903684aa80c}\n\tMatch value:\tAll flags set\n\tCondition value:\t0x00000004\n\n\tFilter Action:\tPermit\n",
+        "winlog": {
+            "activity_id": "{ea88caff-95e6-0001-b2dd-2b961bd8da01}",
+            "api": "wineventlog",
+            "channel": "Security",
+            "event_data": {
+                "Action": "%%16390",
+                "CalloutKey": "{00000000-0000-0000-0000-000000000000}",
+                "CalloutName": "-",
+                "ChangeType": "%%16385",
+                "Conditions": "\n\tCondition ID:\t{71bc78fa-f17c-4997-a602-6abb261f351c}\n\tMatch value:\tEqual to\n\tCondition value:\t-\n\n\tCondition ID:\t{af043a0a-b34d-4f86-979c-c90371af6e66}\n\tMatch value:\tEqual to\n\tCondition value:\t\nO:SYG:SYD:(A;;CCRC;;;LA)(A;;CCRC;;;AC)(A;;CCRC;;;S-1-15-3-1)(A;;CCRC;;;S-1-15-3-2)(A;;CCRC;;;S-1-15-3-3)(A;;CCRC;;;S-1-15-3-4214768333-1334025770-122408079-3919188833)\n\n\n\tCondition ID:\t{97537c6c-d9a3-4767-a381-e942675cd920}\n\tMatch value:\tEqual to\n\tCondition value:\t0x00000083\n\n\tCondition ID:\t{72b1a111-987b-4720-99dd-c7c576fa2d4c}\n\tMatch value:\tEqual to\n\tCondition value:\t0x00000001\n\n\tCondition ID:\t{632ce23b-5167-435c-86d7-e903684aa80c}\n\tMatch value:\tAll flags set\n\tCondition value:\t0x00000004",
+                "FilterId": "72367",
+                "FilterKey": "{b45f13e5-d3e7-485f-a04b-2b5c0fa527cc}",
+                "FilterName": "@{Microsoft.Windows.Photos_2019.19071.12548.0_x64__8wekyb3d8bbwe?ms-resource://Microsoft.Windows.Photos/Resources/AppStoreName}",
+                "FilterType": "%%16388",
+                "LayerId": "46",
+                "LayerKey": "{a3b42c97-9f04-4672-b87e-cee9c483257f}",
+                "LayerName": "ALE Receive/Accept v6 Layer",
+                "ProcessId": "1908",
+                "ProviderKey": "{decc16ca-3f33-4346-be1e-8fb4ae0f3d62}",
+                "ProviderName": "@bfe.dll,-1211",
+                "UserName": "NT AUTHORITY\\LOCAL SERVICE",
+                "UserSid": "S-1-5-19",
+                "Weight": "10376293971763658752"
+            },
+            "event_id": "5447",
+            "keywords": [
+                "Audit Success"
+            ],
+            "opcode": "Info",
+            "provider_guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+            "provider_name": "Microsoft-Windows-Security-Auditing",
+            "task": "Other Policy Change Events"
+        },
+        "filename": "12"
+    },
+    {
+        "event": {
+            "action": "File Delete archived (rule: FileDelete)",
+            "category": [
+                "file"
+            ],
+            "code": "23",
+            "kind": "event",
+            "module": "sysmon",
+            "provider": "Microsoft-Windows-Sysmon",
+            "type": [
+                "deletion"
+            ]
+        },
+        "file": {
+            "directory": "C:\\Users\\LAB Administrator\\AppData\\Local\\Microsoft\\OneDrive\\19.043.0304.0013",
+            "extension": "dll",
+            "name": "api-ms-win-core-profile-l1-1-0.dll",
+            "path": "C:\\Users\\LAB Administrator\\AppData\\Local\\Microsoft\\OneDrive\\19.043.0304.0013\\api-ms-win-core-profile-l1-1-0.dll"
+        },
+        "hash": {
+            "md5": "1778c327803df69fb3a585d992170773",
+            "sha1": "180cee30200d24267537b1c0fe57f7cd42b16f8b",
+            "sha256": "40b9c655cb9c833542f32dee9d7191fa054de957b2aeacc6a63392875ffea70d"
+        },
+        "label": 0,
+        "log": {
+            "level": "information"
+        },
+        "message": "File Delete archived:\nRuleName: Executables\nProcessGuid: {b1b2c0c2-80af-6697-c202-000000000600}\nProcessId: 9636\nUser: MELD\\LAB Administrator\nImage: C:\\Users\\LAB Administrator\\AppData\\Local\\Microsoft\\OneDrive\\Update\\OneDriveSetup.exe\nTargetFilename: C:\\Users\\LAB Administrator\\AppData\\Local\\Microsoft\\OneDrive\\19.043.0304.0013\\api-ms-win-core-profile-l1-1-0.dll\nHashes: SHA1=180CEE30200D24267537B1C0FE57F7CD42B16F8B,MD5=1778C327803DF69FB3A585D992170773,SHA256=40B9C655CB9C833542F32DEE9D7191FA054DE957B2AEACC6A63392875FFEA70D,IMPHASH=00000000000000000000000000000000\nIsExecutable: true\nArchived: true\n",
+        "process": {
+            "executable": "C:\\Users\\LAB Administrator\\AppData\\Local\\Microsoft\\OneDrive\\Update\\OneDriveSetup.exe",
+            "hash": {
+                "md5": "1778c327803df69fb3a585d992170773",
+                "sha1": "180cee30200d24267537b1c0fe57f7cd42b16f8b",
+                "sha256": "40b9c655cb9c833542f32dee9d7191fa054de957b2aeacc6a63392875ffea70d"
+            },
+            "name": "OneDriveSetup.exe"
+        },
+        "related": {
+            "hash": [
+                "180cee30200d24267537b1c0fe57f7cd42b16f8b",
+                "1778c327803df69fb3a585d992170773",
+                "40b9c655cb9c833542f32dee9d7191fa054de957b2aeacc6a63392875ffea70d"
+            ],
+            "user": "LAB Administrator"
+        },
+        "rule": {
+            "name": "Executables"
+        },
+        "sysmon": {
+            "file": {
+                "archived": true,
+                "is_executable": true
+            }
+        },
+        "user": {
+            "domain": "MELD",
+            "id": "S-1-5-18",
+            "name": "LAB Administrator"
+        },
+        "winlog": {
+            "api": "wineventlog",
+            "channel": "Microsoft-Windows-Sysmon/Operational",
+            "event_id": "23",
+            "opcode": "Info",
+            "provider_guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+            "provider_name": "Microsoft-Windows-Sysmon",
+            "task": "File Delete archived (rule: FileDelete)",
+            "user": {
+                "domain": "NT AUTHORITY",
+                "identifier": "S-1-5-18",
+                "name": "SYSTEM",
+                "type": "User"
+            },
+            "version": 5
+        },
+        "filename": "2"
+    },
+    {
+        "event": {
+            "action": "Filtering Platform Policy Change",
+            "code": "5449",
+            "kind": "event",
+            "outcome": "success",
+            "provider": "Microsoft-Windows-Security-Auditing"
+        },
+        "label": 0,
+        "log": {
+            "level": "information"
+        },
+        "message": "A Windows Filtering Platform provider context has been changed.\n\t\nSubject:\n\tSecurity ID:\t\tS-1-5-19\n\tAccount Name:\t\tNT AUTHORITY\\LOCAL SERVICE\n\nProcess Information:\n\tProcess ID:\t1596\n\nProvider Information:\n\tProvider ID:\t{decc16ca-3f33-4346-be1e-8fb4ae0f3d62}\n\tProvider Name:\tMicrosoft Corporation\n\nChange Information:\n\tChange Type:\tAdd\n\nProvider Context:\n\tID:\t{77cf60cb-73a8-4696-a9fd-05f9246ae7cc}\n\tName:\tMPSSVC\n\tType:\tNot persistent\n",
+        "winlog": {
+            "activity_id": "{ea50760d-377f-0001-ef09-68fad5e7da01}",
+            "api": "wineventlog",
+            "channel": "Security",
+            "event_data": {
+                "ChangeType": "%%16384",
+                "ProcessId": "1596",
+                "ProviderContextKey": "{77cf60cb-73a8-4696-a9fd-05f9246ae7cc}",
+                "ProviderContextName": "MPSSVC",
+                "ProviderContextType": "%%16388",
+                "ProviderKey": "{decc16ca-3f33-4346-be1e-8fb4ae0f3d62}",
+                "ProviderName": "Microsoft Corporation",
+                "UserName": "NT AUTHORITY\\LOCAL SERVICE",
+                "UserSid": "S-1-5-19"
+            },
+            "event_id": "5449",
+            "keywords": [
+                "Audit Success"
+            ],
+            "opcode": "Info",
+            "provider_guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+            "provider_name": "Microsoft-Windows-Security-Auditing",
+            "task": "Filtering Platform Policy Change"
+        },
+        "filename": "17"
+    },
+    {
+        "event": {
+            "action": "Process accessed (rule: ProcessAccess)",
+            "category": [
+                "process"
+            ],
+            "code": "10",
+            "kind": "event",
+            "module": "sysmon",
+            "provider": "Microsoft-Windows-Sysmon",
+            "type": [
+                "access"
+            ]
+        },
+        "label": 0,
+        "log": {
+            "level": "information"
+        },
+        "message": "Process accessed:\nRuleName: technique_id=T1036,technique_name=Masquerading\nSourceProcessGUID: {b1b2c0c2-80af-6697-c202-000000000600}\nSourceProcessId: 9636\nSourceThreadId: 4484\nSourceImage: C:\\Users\\LAB Administrator\\AppData\\Local\\Microsoft\\OneDrive\\Update\\OneDriveSetup.exe\nTargetProcessGUID: {b1b2c0c2-8038-6697-7b02-000000000600}\nTargetProcessId: 4016\nTargetImage: C:\\Windows\\Explorer.EXE\nGrantedAccess: 0x40\nCallTrace: C:\\Windows\\SYSTEM32\\ntdll.dll+9da24|C:\\Windows\\System32\\wow64.dll+10a15|C:\\Windows\\System32\\wow64.dll+90da|C:\\Windows\\System32\\wow64cpu.dll+17c3|C:\\Windows\\System32\\wow64cpu.dll+11b9|C:\\Windows\\System32\\wow64.dll+3989|C:\\Windows\\System32\\wow64.dll+337d|C:\\Windows\\SYSTEM32\\ntdll.dll+76099|C:\\Windows\\SYSTEM32\\ntdll.dll+75c83|C:\\Windows\\SYSTEM32\\ntdll.dll+75c2e|C:\\Windows\\SYSTEM32\\ntdll.dll+7326c(wow64)|C:\\Windows\\System32\\KERNELBASE.dll+1107f8(wow64)|C:\\Windows\\System32\\shcore.dll+2571c(wow64)|C:\\Windows\\System32\\shcore.dll+256fe(wow64)|C:\\Windows\\System32\\shcore.dll+2ba9d(wow64)|C:\\Windows\\System32\\shcore.dll+2b7c2(wow64)|C:\\Windows\\System32\\shcore.dll+2b78f(wow64)|C:\\Windows\\System32\\shcore.dll+2b6d3(wow64)|C:\\Windows\\SYSTEM32\\windows.storage.dll+db148(wow64)|C:\\Windows\\SYSTEM32\\windows.storage.dll+daf5b(wow64)|C:\\Windows\\SYSTEM32\\windows.storage.dll+db474(wow64)|C:\\Windows\\System32\\shcore.dll+38324(wow64)|C:\\Windows\\System32\\shcore.dll+382b5(wow64)|C:\\Users\\LAB Administrator\\AppData\\Local\\Microsoft\\OneDrive\\Update\\OneDriveSetup.exe+282787\nSourceUser: MELD\\LAB Administrator\nTargetUser: MELD\\LAB Administrator\n",
+        "process": {
+            "executable": "C:\\Users\\LAB Administrator\\AppData\\Local\\Microsoft\\OneDrive\\Update\\OneDriveSetup.exe",
+            "name": "OneDriveSetup.exe"
+        },
+        "rule": {
+            "name": "technique_id=T1036,technique_name=Masquerading"
+        },
+        "winlog": {
+            "api": "wineventlog",
+            "channel": "Microsoft-Windows-Sysmon/Operational",
+            "event_data": {
+                "CallTrace": "C:\\Windows\\SYSTEM32\\ntdll.dll+9da24|C:\\Windows\\System32\\wow64.dll+10a15|C:\\Windows\\System32\\wow64.dll+90da|C:\\Windows\\System32\\wow64cpu.dll+17c3|C:\\Windows\\System32\\wow64cpu.dll+11b9|C:\\Windows\\System32\\wow64.dll+3989|C:\\Windows\\System32\\wow64.dll+337d|C:\\Windows\\SYSTEM32\\ntdll.dll+76099|C:\\Windows\\SYSTEM32\\ntdll.dll+75c83|C:\\Windows\\SYSTEM32\\ntdll.dll+75c2e|C:\\Windows\\SYSTEM32\\ntdll.dll+7326c(wow64)|C:\\Windows\\System32\\KERNELBASE.dll+1107f8(wow64)|C:\\Windows\\System32\\shcore.dll+2571c(wow64)|C:\\Windows\\System32\\shcore.dll+256fe(wow64)|C:\\Windows\\System32\\shcore.dll+2ba9d(wow64)|C:\\Windows\\System32\\shcore.dll+2b7c2(wow64)|C:\\Windows\\System32\\shcore.dll+2b78f(wow64)|C:\\Windows\\System32\\shcore.dll+2b6d3(wow64)|C:\\Windows\\SYSTEM32\\windows.storage.dll+db148(wow64)|C:\\Windows\\SYSTEM32\\windows.storage.dll+daf5b(wow64)|C:\\Windows\\SYSTEM32\\windows.storage.dll+db474(wow64)|C:\\Windows\\System32\\shcore.dll+38324(wow64)|C:\\Windows\\System32\\shcore.dll+382b5(wow64)|C:\\Users\\LAB Administrator\\AppData\\Local\\Microsoft\\OneDrive\\Update\\OneDriveSetup.exe+282787",
+                "GrantedAccess": "0x40",
+                "SourceUser": "MELD\\LAB Administrator",
+                "TargetImage": "C:\\Windows\\Explorer.EXE",
+                "TargetProcessGUID": "{b1b2c0c2-8038-6697-7b02-000000000600}",
+                "TargetProcessId": "4016",
+                "TargetUser": "MELD\\LAB Administrator"
+            },
+            "event_id": "10",
+            "opcode": "Info",
+            "provider_guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+            "provider_name": "Microsoft-Windows-Sysmon",
+            "task": "Process accessed (rule: ProcessAccess)",
+            "user": {
+                "domain": "NT AUTHORITY",
+                "identifier": "S-1-5-18",
+                "name": "SYSTEM",
+                "type": "User"
+            },
+            "version": 3
+        },
+        "filename": "1"
+    },
+    {
+        "event": {
+            "action": "Registry value set (rule: RegistryEvent)",
+            "category": [
+                "configuration",
+                "registry"
+            ],
+            "code": "13",
+            "kind": "event",
+            "module": "sysmon",
+            "provider": "Microsoft-Windows-Sysmon",
+            "type": [
+                "change"
+            ]
+        },
+        "label": 0,
+        "log": {
+            "level": "information"
+        },
+        "message": "Registry value set:\nRuleName: technique_id=T1543,technique_name=Service Creation\nEventType: SetValue\nProcessGuid: {8a2f8644-73f2-6697-1800-000000000600}\nProcessId: 1152\nImage: C:\\Windows\\system32\\svchost.exe\nTargetObject: HKLM\\System\\CurrentControlSet\\Services\\W32Time\\Config\\Status\\LastGoodSampleInfo\nDetails: 133656796474651305;VM IC Time Synchronization Provider\nUser: NT AUTHORITY\\LOCAL SERVICE\n",
+        "process": {
+            "executable": "C:\\Windows\\system32\\svchost.exe",
+            "name": "svchost.exe"
+        },
+        "registry": {
+            "hive": "HKLM",
+            "key": "System\\CurrentControlSet\\Services\\W32Time\\Config\\Status\\LastGoodSampleInfo",
+            "path": "HKLM\\System\\CurrentControlSet\\Services\\W32Time\\Config\\Status\\LastGoodSampleInfo",
+            "value": "LastGoodSampleInfo"
+        },
+        "rule": {
+            "name": "technique_id=T1543,technique_name=Service Creation"
+        },
+        "winlog": {
+            "api": "wineventlog",
+            "channel": "Microsoft-Windows-Sysmon/Operational",
+            "event_data": {
+                "Details": "133656796474651305;VM IC Time Synchronization Provider",
+                "EventType": "SetValue",
+                "TargetObject": "HKLM\\System\\CurrentControlSet\\Services\\W32Time\\Config\\Status\\LastGoodSampleInfo",
+                "User": "NT AUTHORITY\\LOCAL SERVICE"
+            },
+            "event_id": "13",
+            "opcode": "Info",
+            "provider_guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+            "provider_name": "Microsoft-Windows-Sysmon",
+            "task": "Registry value set (rule: RegistryEvent)",
+            "user": {
+                "domain": "NT AUTHORITY",
+                "identifier": "S-1-5-18",
+                "name": "SYSTEM",
+                "type": "User"
+            },
+            "version": 2
+        },
+        "filename": "9"
+    },
+    {
+        "event": {
+            "action": "Other Policy Change Events",
+            "code": "5447",
+            "kind": "event",
+            "outcome": "success",
+            "provider": "Microsoft-Windows-Security-Auditing"
+        },
+        "label": 0,
+        "log": {
+            "level": "information"
+        },
+        "message": "A Windows Filtering Platform filter has been changed.\n\t\nSubject:\n\tSecurity ID:\t\tS-1-5-19\n\tAccount Name:\t\tNT AUTHORITY\\LOCAL SERVICE\n\nProcess Information:\n\tProcess ID:\t1908\n\nProvider Information:\n\tID:\t\t{4b153735-1049-4480-aab4-d1b9bdc03710}\n\tName:\t\t@bfe.dll,-1209\n\nChange Information:\n\tChange Type:\tDelete\n\nFilter Information:\n\tID:\t\t{2d3e2e4a-cfdd-4c8a-926d-2625d3bfadea}\n\tName:\t\tAllow inbound UDP traffic to fdphost port 1900\n\tType:\t\tNot persistent\n\tRun-Time ID:\t71640\n\nLayer Information:\n\tID:\t\t{a3b42c97-9f04-4672-b87e-cee9c483257f}\n\tName:\t\tALE Receive/Accept v6 Layer\n\tRun-Time ID:\t46\n\nCallout Information:\n\tID:\t\t{00000000-0000-0000-0000-000000000000}\n\tName:\t\t-\n\nAdditional Information:\n\tWeight:\t246702921482240\t\n\tConditions:\t\n\tCondition ID:\t{d78e1e87-8644-4ea5-9437-d809ecefc971}\n\tMatch value:\tEqual to\n\tCondition value:\t\n    00000000  5c 00 64 00 65 00 76 00-69 00 63 00 65 00 5c 00  \\.d.e.v.i.c.e.\\.\n    00000010  68 00 61 00 72 00 64 00-64 00 69 00 73 00 6b 00  h.a.r.d.d.i.s.k.\n    00000020  76 00 6f 00 6c 00 75 00-6d 00 65 00 34 00 5c 00  v.o.l.u.m.e.4.\\.\n    00000030  77 00 69 00 6e 00 64 00-6f 00 77 00 73 00 5c 00  w.i.n.d.o.w.s.\\.\n    00000040  73 00 79 00 73 00 74 00-65 00 6d 00 33 00 32 00  s.y.s.t.e.m.3.2.\n    00000050  5c 00 73 00 76 00 63 00-68 00 6f 00 73 00 74 00  \\.s.v.c.h.o.s.t.\n    00000060  2e 00 65 00 78 00 65 00-00 00                    ..e.x.e...\n\n\n\tCondition ID:\t{71bc78fa-f17c-4997-a602-6abb261f351c}\n\tMatch value:\tEqual to\n\tCondition value:\t-\n\n\tCondition ID:\t{af043a0a-b34d-4f86-979c-c90371af6e66}\n\tMatch value:\tEqual to\n\tCondition value:\t\nO:SYG:SYD:(A;;CCRC;;;S-1-5-80-364023826-931424190-487969545-1024119571-74567675)\n\n\n\tCondition ID:\t{0c1ba1af-5765-453f-af22-a8f791ac775b}\n\tMatch value:\tEqual to\n\tCondition value:\t0x076c\n\n\tCondition ID:\t{3971ef2b-623e-4f9a-8cb1-6e79b806b9a7}\n\tMatch value:\tEqual to\n\tCondition value:\t0x11\n\n\tFilter Action:\tPermit\n",
+        "winlog": {
+            "activity_id": "{ea88caff-95e6-0001-b2dd-2b961bd8da01}",
+            "api": "wineventlog",
+            "channel": "Security",
+            "event_data": {
+                "Action": "%%16390",
+                "CalloutKey": "{00000000-0000-0000-0000-000000000000}",
+                "CalloutName": "-",
+                "ChangeType": "%%16385",
+                "Conditions": "\n\tCondition ID:\t{d78e1e87-8644-4ea5-9437-d809ecefc971}\n\tMatch value:\tEqual to\n\tCondition value:\t\n    00000000  5c 00 64 00 65 00 76 00-69 00 63 00 65 00 5c 00  \\.d.e.v.i.c.e.\\.\n    00000010  68 00 61 00 72 00 64 00-64 00 69 00 73 00 6b 00  h.a.r.d.d.i.s.k.\n    00000020  76 00 6f 00 6c 00 75 00-6d 00 65 00 34 00 5c 00  v.o.l.u.m.e.4.\\.\n    00000030  77 00 69 00 6e 00 64 00-6f 00 77 00 73 00 5c 00  w.i.n.d.o.w.s.\\.\n    00000040  73 00 79 00 73 00 74 00-65 00 6d 00 33 00 32 00  s.y.s.t.e.m.3.2.\n    00000050  5c 00 73 00 76 00 63 00-68 00 6f 00 73 00 74 00  \\.s.v.c.h.o.s.t.\n    00000060  2e 00 65 00 78 00 65 00-00 00                    ..e.x.e...\n\n\n\tCondition ID:\t{71bc78fa-f17c-4997-a602-6abb261f351c}\n\tMatch value:\tEqual to\n\tCondition value:\t-\n\n\tCondition ID:\t{af043a0a-b34d-4f86-979c-c90371af6e66}\n\tMatch value:\tEqual to\n\tCondition value:\t\nO:SYG:SYD:(A;;CCRC;;;S-1-5-80-364023826-931424190-487969545-1024119571-74567675)\n\n\n\tCondition ID:\t{0c1ba1af-5765-453f-af22-a8f791ac775b}\n\tMatch value:\tEqual to\n\tCondition value:\t0x076c\n\n\tCondition ID:\t{3971ef2b-623e-4f9a-8cb1-6e79b806b9a7}\n\tMatch value:\tEqual to\n\tCondition value:\t0x11",
+                "FilterId": "71640",
+                "FilterKey": "{2d3e2e4a-cfdd-4c8a-926d-2625d3bfadea}",
+                "FilterName": "Allow inbound UDP traffic to fdphost port 1900",
+                "FilterType": "%%16388",
+                "LayerId": "46",
+                "LayerKey": "{a3b42c97-9f04-4672-b87e-cee9c483257f}",
+                "LayerName": "ALE Receive/Accept v6 Layer",
+                "ProcessId": "1908",
+                "ProviderKey": "{4b153735-1049-4480-aab4-d1b9bdc03710}",
+                "ProviderName": "@bfe.dll,-1209",
+                "UserName": "NT AUTHORITY\\LOCAL SERVICE",
+                "UserSid": "S-1-5-19",
+                "Weight": "246702921482240"
+            },
+            "event_id": "5447",
+            "keywords": [
+                "Audit Success"
+            ],
+            "opcode": "Info",
+            "provider_guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+            "provider_name": "Microsoft-Windows-Security-Auditing",
+            "task": "Other Policy Change Events"
+        },
+        "filename": "11"
+    },
+    {
+        "event": {
+            "action": "MPSSVC Rule-Level Policy Change",
+            "code": "4946",
+            "kind": "event",
+            "outcome": "success",
+            "provider": "Microsoft-Windows-Security-Auditing"
+        },
+        "label": 0,
+        "log": {
+            "level": "information"
+        },
+        "message": "A change was made to the Windows Firewall exception list. A rule was added.\n\t\nProfile Changed:\tAll\n\nAdded Rule:\n\tRule ID:\t{EE949203-DB56-4689-833B-2AEABB546AF7}\n\tRule Name:\t@{F46D4000-FD22-4DB4-AC8E-4E1DDDE828FE_10.0.19041.4239_neutral_neutral_cw5n1h2txyewy?ms-resource://F46D4000-FD22-4DB4-AC8E-4E1DDDE828FE/Resources/AppxManifest_DisplayName}\n",
+        "winlog": {
+            "activity_id": "{3837d303-5860-0000-8433-c4961bd8da01}",
+            "api": "wineventlog",
+            "channel": "Security",
+            "event_data": {
+                "ProfileChanged": "All",
+                "RuleId": "{EE949203-DB56-4689-833B-2AEABB546AF7}",
+                "RuleName": "@{F46D4000-FD22-4DB4-AC8E-4E1DDDE828FE_10.0.19041.4239_neutral_neutral_cw5n1h2txyewy?ms-resource://F46D4000-FD22-4DB4-AC8E-4E1DDDE828FE/Resources/AppxManifest_DisplayName}"
+            },
+            "event_id": "4946",
+            "keywords": [
+                "Audit Success"
+            ],
+            "opcode": "Info",
+            "provider_guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+            "provider_name": "Microsoft-Windows-Security-Auditing",
+            "task": "MPSSVC Rule-Level Policy Change"
+        },
+        "filename": "8"
+    },
+    {
+        "event": {
+            "action": "Other Policy Change Events",
+            "code": "5447",
+            "kind": "event",
+            "outcome": "success",
+            "provider": "Microsoft-Windows-Security-Auditing"
+        },
+        "label": 0,
+        "log": {
+            "level": "information"
+        },
+        "message": "A Windows Filtering Platform filter has been changed.\n\t\nSubject:\n\tSecurity ID:\t\tS-1-5-19\n\tAccount Name:\t\tNT AUTHORITY\\LOCAL SERVICE\n\nProcess Information:\n\tProcess ID:\t1620\n\nProvider Information:\n\tID:\t\t{decc16ca-3f33-4346-be1e-8fb4ae0f3d62}\n\tName:\t\tMicrosoft Corporation\n\nChange Information:\n\tChange Type:\tAdd\n\nFilter Information:\n\tID:\t\t{f0c3a92c-a464-410b-9b17-33c267bb3aba}\n\tName:\t\tPort Scanning Prevention Filter\n\tType:\t\tNot persistent\n\tRun-Time ID:\t70572\n\nLayer Information:\n\tID:\t\t{2a6ff955-3b2b-49d2-9848-ad9d72dcaab7}\n\tName:\t\tInbound Transport v6 Discard Layer\n\tRun-Time ID:\t15\n\nCallout Information:\n\tID:\t\t{8693cc74-a075-4156-b476-9286eece814e}\n\tName:\t\tWFP Built-in Silent Drop Transport v6 Discard Layer Callout\n\nAdditional Information:\n\tWeight:\t18446744073709551615\t\n\tConditions:\t\n\tCondition ID:\t{632ce23b-5167-435c-86d7-e903684aa80c}\n\tMatch value:\tNo flags set\n\tCondition value:\t0x00000003\n\n\tCondition ID:\t{ab3033c9-c0e3-4759-937d-5758c65d4ae3}\n\tMatch value:\tEqual to\n\tCondition value:\t0x00000003\n\n\tFilter Action:\tCallout\n",
+        "winlog": {
+            "activity_id": "{15dd0033-e1bb-0000-f8a2-0d22dbe7da01}",
+            "api": "wineventlog",
+            "channel": "Security",
+            "event_data": {
+                "Action": "%%16391",
+                "CalloutKey": "{8693cc74-a075-4156-b476-9286eece814e}",
+                "CalloutName": "WFP Built-in Silent Drop Transport v6 Discard Layer Callout",
+                "ChangeType": "%%16384",
+                "Conditions": "\n\tCondition ID:\t{632ce23b-5167-435c-86d7-e903684aa80c}\n\tMatch value:\tNo flags set\n\tCondition value:\t0x00000003\n\n\tCondition ID:\t{ab3033c9-c0e3-4759-937d-5758c65d4ae3}\n\tMatch value:\tEqual to\n\tCondition value:\t0x00000003",
+                "FilterId": "70572",
+                "FilterKey": "{f0c3a92c-a464-410b-9b17-33c267bb3aba}",
+                "FilterName": "Port Scanning Prevention Filter",
+                "FilterType": "%%16388",
+                "LayerId": "15",
+                "LayerKey": "{2a6ff955-3b2b-49d2-9848-ad9d72dcaab7}",
+                "LayerName": "Inbound Transport v6 Discard Layer",
+                "ProcessId": "1620",
+                "ProviderKey": "{decc16ca-3f33-4346-be1e-8fb4ae0f3d62}",
+                "ProviderName": "Microsoft Corporation",
+                "UserName": "NT AUTHORITY\\LOCAL SERVICE",
+                "UserSid": "S-1-5-19",
+                "Weight": "18446744073709551615"
+            },
+            "event_id": "5447",
+            "keywords": [
+                "Audit Success"
+            ],
+            "opcode": "Info",
+            "provider_guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+            "provider_name": "Microsoft-Windows-Security-Auditing",
+            "task": "Other Policy Change Events"
+        },
+        "filename": "23"
+    },
+    {
+        "event": {
+            "action": "Filtering Platform Policy Change",
+            "code": "5449",
+            "kind": "event",
+            "outcome": "success",
+            "provider": "Microsoft-Windows-Security-Auditing"
+        },
+        "label": 0,
+        "log": {
+            "level": "information"
+        },
+        "message": "A Windows Filtering Platform provider context has been changed.\n\t\nSubject:\n\tSecurity ID:\t\tS-1-5-19\n\tAccount Name:\t\tNT AUTHORITY\\LOCAL SERVICE\n\nProcess Information:\n\tProcess ID:\t1596\n\nProvider Information:\n\tProvider ID:\t{decc16ca-3f33-4346-be1e-8fb4ae0f3d62}\n\tProvider Name:\tMicrosoft Corporation\n\nChange Information:\n\tChange Type:\tAdd\n\nProvider Context:\n\tID:\t{5ecd32df-f08f-4a2a-8c3e-6250c1599716}\n\tName:\tMPSSVC\n\tType:\tNot persistent\n",
+        "winlog": {
+            "activity_id": "{ea50760d-377f-0001-ef09-68fad5e7da01}",
+            "api": "wineventlog",
+            "channel": "Security",
+            "event_data": {
+                "ChangeType": "%%16384",
+                "ProcessId": "1596",
+                "ProviderContextKey": "{5ecd32df-f08f-4a2a-8c3e-6250c1599716}",
+                "ProviderContextName": "MPSSVC",
+                "ProviderContextType": "%%16388",
+                "ProviderKey": "{decc16ca-3f33-4346-be1e-8fb4ae0f3d62}",
+                "ProviderName": "Microsoft Corporation",
+                "UserName": "NT AUTHORITY\\LOCAL SERVICE",
+                "UserSid": "S-1-5-19"
+            },
+            "event_id": "5449",
+            "keywords": [
+                "Audit Success"
+            ],
+            "opcode": "Info",
+            "provider_guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+            "provider_name": "Microsoft-Windows-Security-Auditing",
+            "task": "Filtering Platform Policy Change"
+        },
+        "filename": "16"
+    },
+    {
+        "event": {
+            "action": "Other Policy Change Events",
+            "code": "5447",
+            "kind": "event",
+            "outcome": "success",
+            "provider": "Microsoft-Windows-Security-Auditing"
+        },
+        "label": 0,
+        "log": {
+            "level": "information"
+        },
+        "message": "A Windows Filtering Platform filter has been changed.\n\t\nSubject:\n\tSecurity ID:\t\tS-1-5-19\n\tAccount Name:\t\tNT AUTHORITY\\LOCAL SERVICE\n\nProcess Information:\n\tProcess ID:\t1596\n\nProvider Information:\n\tID:\t\t{decc16ca-3f33-4346-be1e-8fb4ae0f3d62}\n\tName:\t\tMicrosoft Corporation\n\nChange Information:\n\tChange Type:\tAdd\n\nFilter Information:\n\tID:\t\t{1b2e7c6d-18f5-4c45-a6ff-fed8bfaa1053}\n\tName:\t\tPort Scanning Prevention Filter\n\tType:\t\tNot persistent\n\tRun-Time ID:\t71731\n\nLayer Information:\n\tID:\t\t{7fb03b60-7b8d-4dfa-badd-980176fc4e12}\n\tName:\t\tOutbound ICMP Error v6 Layer\n\tRun-Time ID:\t34\n\nCallout Information:\n\tID:\t\t{00000000-0000-0000-0000-000000000000}\n\tName:\t\t-\n\nAdditional Information:\n\tWeight:\t9223372070677643276\t\n\tConditions:\t\n\tCondition ID:\t{632ce23b-5167-435c-86d7-e903684aa80c}\n\tMatch value:\tNo flags set\n\tCondition value:\t0x00000001\n\n\tCondition ID:\t{d7ff9a56-cdaa-472b-84db-d23963c1d1bf}\n\tMatch value:\tEqual to\n\tCondition value:\t0x00000002\n\n\tCondition ID:\t{0c1ba1af-5765-453f-af22-a8f791ac775b}\n\tMatch value:\tEqual to\n\tCondition value:\t0x0001\n\n\tFilter Action:\tPermit\n",
+        "winlog": {
+            "activity_id": "{ea50760d-377f-0001-ef09-68fad5e7da01}",
+            "api": "wineventlog",
+            "channel": "Security",
+            "event_data": {
+                "Action": "%%16390",
+                "CalloutKey": "{00000000-0000-0000-0000-000000000000}",
+                "CalloutName": "-",
+                "ChangeType": "%%16384",
+                "Conditions": "\n\tCondition ID:\t{632ce23b-5167-435c-86d7-e903684aa80c}\n\tMatch value:\tNo flags set\n\tCondition value:\t0x00000001\n\n\tCondition ID:\t{d7ff9a56-cdaa-472b-84db-d23963c1d1bf}\n\tMatch value:\tEqual to\n\tCondition value:\t0x00000002\n\n\tCondition ID:\t{0c1ba1af-5765-453f-af22-a8f791ac775b}\n\tMatch value:\tEqual to\n\tCondition value:\t0x0001",
+                "FilterId": "71731",
+                "FilterKey": "{1b2e7c6d-18f5-4c45-a6ff-fed8bfaa1053}",
+                "FilterName": "Port Scanning Prevention Filter",
+                "FilterType": "%%16388",
+                "LayerId": "34",
+                "LayerKey": "{7fb03b60-7b8d-4dfa-badd-980176fc4e12}",
+                "LayerName": "Outbound ICMP Error v6 Layer",
+                "ProcessId": "1596",
+                "ProviderKey": "{decc16ca-3f33-4346-be1e-8fb4ae0f3d62}",
+                "ProviderName": "Microsoft Corporation",
+                "UserName": "NT AUTHORITY\\LOCAL SERVICE",
+                "UserSid": "S-1-5-19",
+                "Weight": "9223372070677643276"
+            },
+            "event_id": "5447",
+            "keywords": [
+                "Audit Success"
+            ],
+            "opcode": "Info",
+            "provider_guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+            "provider_name": "Microsoft-Windows-Security-Auditing",
+            "task": "Other Policy Change Events"
+        },
+        "filename": "25"
+    },
+    {
+        "event": {
+            "action": "Registry object added or deleted (rule: RegistryEvent)",
+            "category": [
+                "configuration",
+                "registry"
+            ],
+            "code": "12",
+            "kind": "event",
+            "module": "sysmon",
+            "provider": "Microsoft-Windows-Sysmon",
+            "type": [
+                "change"
+            ]
+        },
+        "label": 0,
+        "log": {
+            "level": "information"
+        },
+        "message": "Registry object added or deleted:\nRuleName: technique_id=T1543,technique_name=Service Creation\nEventType: CreateKey\nProcessGuid: {c6555c30-d7cb-66b1-1500-000000000800}\nProcessId: 1092\nImage: C:\\Windows\\system32\\svchost.exe\nTargetObject: HKLM\\System\\CurrentControlSet\\Services\\W32Time\\Config\\Status\nUser: NT AUTHORITY\\LOCAL SERVICE\n",
+        "process": {
+            "executable": "C:\\Windows\\system32\\svchost.exe",
+            "name": "svchost.exe"
+        },
+        "registry": {
+            "hive": "HKLM",
+            "key": "System\\CurrentControlSet\\Services\\W32Time\\Config\\Status",
+            "path": "HKLM\\System\\CurrentControlSet\\Services\\W32Time\\Config\\Status",
+            "value": "Status"
+        },
+        "rule": {
+            "name": "technique_id=T1543,technique_name=Service Creation"
+        },
+        "winlog": {
+            "api": "wineventlog",
+            "channel": "Microsoft-Windows-Sysmon/Operational",
+            "event_data": {
+                "EventType": "CreateKey",
+                "TargetObject": "HKLM\\System\\CurrentControlSet\\Services\\W32Time\\Config\\Status",
+                "User": "NT AUTHORITY\\LOCAL SERVICE"
+            },
+            "event_id": "12",
+            "opcode": "Info",
+            "provider_guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+            "provider_name": "Microsoft-Windows-Sysmon",
+            "task": "Registry object added or deleted (rule: RegistryEvent)",
+            "user": {
+                "domain": "NT AUTHORITY",
+                "identifier": "S-1-5-18",
+                "name": "SYSTEM",
+                "type": "User"
+            },
+            "version": 2
+        },
+        "filename": "22"
+    },
+    {
+        "event": {
+            "action": "Other Policy Change Events",
+            "code": "5447",
+            "kind": "event",
+            "outcome": "success",
+            "provider": "Microsoft-Windows-Security-Auditing"
+        },
+        "label": 0,
+        "log": {
+            "level": "information"
+        },
+        "message": "A Windows Filtering Platform filter has been changed.\n\t\nSubject:\n\tSecurity ID:\t\tS-1-5-19\n\tAccount Name:\t\tNT AUTHORITY\\LOCAL SERVICE\n\nProcess Information:\n\tProcess ID:\t1572\n\nProvider Information:\n\tID:\t\t{4b153735-1049-4480-aab4-d1b9bdc03710}\n\tName:\t\tMicrosoft Corporation\n\nChange Information:\n\tChange Type:\tAdd\n\nFilter Information:\n\tID:\t\t{87c864f0-b57f-42b3-96c3-83ff1c607d60}\n\tName:\t\tCast to Device streaming server hardening rules for RTSP\n\tType:\t\tNot persistent\n\tRun-Time ID:\t71880\n\nLayer Information:\n\tID:\t\t{a3b42c97-9f04-4672-b87e-cee9c483257f}\n\tName:\t\tALE Receive/Accept v6 Layer\n\tRun-Time ID:\t46\n\nCallout Information:\n\tID:\t\t{00000000-0000-0000-0000-000000000000}\n\tName:\t\t-\n\nAdditional Information:\n\tWeight:\t246428043575296\t\n\tConditions:\t\n\tCondition ID:\t{d78e1e87-8644-4ea5-9437-d809ecefc971}\n\tMatch value:\tEqual to\n\tCondition value:\t\n    00000000  5c 00 64 00 65 00 76 00-69 00 63 00 65 00 5c 00  \\.d.e.v.i.c.e.\\.\n    00000010  68 00 61 00 72 00 64 00-64 00 69 00 73 00 6b 00  h.a.r.d.d.i.s.k.\n    00000020  76 00 6f 00 6c 00 75 00-6d 00 65 00 34 00 5c 00  v.o.l.u.m.e.4.\\.\n    00000030  77 00 69 00 6e 00 64 00-6f 00 77 00 73 00 5c 00  w.i.n.d.o.w.s.\\.\n    00000040  73 00 79 00 73 00 74 00-65 00 6d 00 33 00 32 00  s.y.s.t.e.m.3.2.\n    00000050  5c 00 6d 00 64 00 65 00-73 00 65 00 72 00 76 00  \\.m.d.e.s.e.r.v.\n    00000060  65 00 72 00 2e 00 65 00-78 00 65 00 00 00        e.r...e.x.e...\n\n\n\tCondition ID:\t{0c1ba1af-5765-453f-af22-a8f791ac775b}\n\tMatch value:\tEqual to\n\tCondition value:\t0x5c02\n\n\tCondition ID:\t{3971ef2b-623e-4f9a-8cb1-6e79b806b9a7}\n\tMatch value:\tEqual to\n\tCondition value:\t0x06\n\n\tFilter Action:\tPermit\n",
+        "winlog": {
+            "activity_id": "{e473deab-76a5-0001-ae45-93951bd8da01}",
+            "api": "wineventlog",
+            "channel": "Security",
+            "event_data": {
+                "Action": "%%16390",
+                "CalloutKey": "{00000000-0000-0000-0000-000000000000}",
+                "CalloutName": "-",
+                "ChangeType": "%%16384",
+                "Conditions": "\n\tCondition ID:\t{d78e1e87-8644-4ea5-9437-d809ecefc971}\n\tMatch value:\tEqual to\n\tCondition value:\t\n    00000000  5c 00 64 00 65 00 76 00-69 00 63 00 65 00 5c 00  \\.d.e.v.i.c.e.\\.\n    00000010  68 00 61 00 72 00 64 00-64 00 69 00 73 00 6b 00  h.a.r.d.d.i.s.k.\n    00000020  76 00 6f 00 6c 00 75 00-6d 00 65 00 34 00 5c 00  v.o.l.u.m.e.4.\\.\n    00000030  77 00 69 00 6e 00 64 00-6f 00 77 00 73 00 5c 00  w.i.n.d.o.w.s.\\.\n    00000040  73 00 79 00 73 00 74 00-65 00 6d 00 33 00 32 00  s.y.s.t.e.m.3.2.\n    00000050  5c 00 6d 00 64 00 65 00-73 00 65 00 72 00 76 00  \\.m.d.e.s.e.r.v.\n    00000060  65 00 72 00 2e 00 65 00-78 00 65 00 00 00        e.r...e.x.e...\n\n\n\tCondition ID:\t{0c1ba1af-5765-453f-af22-a8f791ac775b}\n\tMatch value:\tEqual to\n\tCondition value:\t0x5c02\n\n\tCondition ID:\t{3971ef2b-623e-4f9a-8cb1-6e79b806b9a7}\n\tMatch value:\tEqual to\n\tCondition value:\t0x06",
+                "FilterId": "71880",
+                "FilterKey": "{87c864f0-b57f-42b3-96c3-83ff1c607d60}",
+                "FilterName": "Cast to Device streaming server hardening rules for RTSP",
+                "FilterType": "%%16388",
+                "LayerId": "46",
+                "LayerKey": "{a3b42c97-9f04-4672-b87e-cee9c483257f}",
+                "LayerName": "ALE Receive/Accept v6 Layer",
+                "ProcessId": "1572",
+                "ProviderKey": "{4b153735-1049-4480-aab4-d1b9bdc03710}",
+                "ProviderName": "Microsoft Corporation",
+                "UserName": "NT AUTHORITY\\LOCAL SERVICE",
+                "UserSid": "S-1-5-19",
+                "Weight": "246428043575296"
+            },
+            "event_id": "5447",
+            "keywords": [
+                "Audit Success"
+            ],
+            "opcode": "Info",
+            "provider_guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+            "provider_name": "Microsoft-Windows-Security-Auditing",
+            "task": "Other Policy Change Events"
+        },
+        "filename": "4"
+    },
+    {
+        "event": {
+            "action": "Filtering Platform Policy Change",
+            "code": "5449",
+            "kind": "event",
+            "outcome": "success",
+            "provider": "Microsoft-Windows-Security-Auditing"
+        },
+        "label": 0,
+        "log": {
+            "level": "information"
+        },
+        "message": "A Windows Filtering Platform provider context has been changed.\n\t\nSubject:\n\tSecurity ID:\t\tS-1-5-19\n\tAccount Name:\t\tNT AUTHORITY\\LOCAL SERVICE\n\nProcess Information:\n\tProcess ID:\t1572\n\nProvider Information:\n\tProvider ID:\t{decc16ca-3f33-4346-be1e-8fb4ae0f3d62}\n\tProvider Name:\tMicrosoft Corporation\n\nChange Information:\n\tChange Type:\tAdd\n\nProvider Context:\n\tID:\t{b2d65a4c-6e09-4687-a47a-103e8cca556c}\n\tName:\tMPSSVC\n\tType:\tNot persistent\n",
+        "winlog": {
+            "activity_id": "{e473deab-76a5-0001-ae45-93951bd8da01}",
+            "api": "wineventlog",
+            "channel": "Security",
+            "event_data": {
+                "ChangeType": "%%16384",
+                "ProcessId": "1572",
+                "ProviderContextKey": "{b2d65a4c-6e09-4687-a47a-103e8cca556c}",
+                "ProviderContextName": "MPSSVC",
+                "ProviderContextType": "%%16388",
+                "ProviderKey": "{decc16ca-3f33-4346-be1e-8fb4ae0f3d62}",
+                "ProviderName": "Microsoft Corporation",
+                "UserName": "NT AUTHORITY\\LOCAL SERVICE",
+                "UserSid": "S-1-5-19"
+            },
+            "event_id": "5449",
+            "keywords": [
+                "Audit Success"
+            ],
+            "opcode": "Info",
+            "provider_guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+            "provider_name": "Microsoft-Windows-Security-Auditing",
+            "task": "Filtering Platform Policy Change"
+        },
+        "filename": "5"
+    }
+]

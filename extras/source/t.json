@@ -1,0 +1,333 @@
+[
+    {
+        "event": {
+            "action": "File stream created (rule: FileCreateStreamHash)",
+            "category": [
+                "file"
+            ],
+            "code": "15",
+            "kind": "event",
+            "module": "sysmon",
+            "provider": "Microsoft-Windows-Sysmon",
+            "type": [
+                "access"
+            ]
+        },
+        "file": {
+            "directory": "C:\\Users\\LAB Administrator\\Desktop\\pypykatz-main\\pypykatz\\lsadecryptor\\packages\\kerberos",
+            "extension": "Identifier",
+            "hash": {
+                "md5": "ccdd674c57bdf74ac0eab9db00b84ddc",
+                "sha1": "60e1127e8ae0051f8033b19d7f21f299042effcd",
+                "sha256": "4704841f7bf40b48db63c9d69fad76c7686afe80c9f637a5caefc3b24eaed295"
+            },
+            "name": "__init__.py:Zone.Identifier",
+            "path": "C:\\Users\\LAB Administrator\\Desktop\\pypykatz-main\\pypykatz\\lsadecryptor\\packages\\kerberos\\__init__.py:Zone.Identifier"
+        },
+        "hash": {
+            "md5": "ccdd674c57bdf74ac0eab9db00b84ddc",
+            "sha1": "60e1127e8ae0051f8033b19d7f21f299042effcd",
+            "sha256": "4704841f7bf40b48db63c9d69fad76c7686afe80c9f637a5caefc3b24eaed295"
+        },
+        "label": 1,
+        "log": {
+            "level": "information"
+        },
+        "message": "File stream created:\nRuleName: technique_id=T1189,technique_name=Drive-by Compromise\nProcessGuid: {c6555c30-509e-66c4-4e01-000000001300}\nProcessId: 6584\nImage: C:\\Windows\\Explorer.EXE\nTargetFilename: C:\\Users\\LAB Administrator\\Desktop\\pypykatz-main\\pypykatz\\lsadecryptor\\packages\\kerberos\\__init__.py:Zone.Identifier\nHash: SHA1=60E1127E8AE0051F8033B19D7F21F299042EFFCD,MD5=CCDD674C57BDF74AC0EAB9DB00B84DDC,SHA256=4704841F7BF40B48DB63C9D69FAD76C7686AFE80C9F637A5CAEFC3B24EAED295,IMPHASH=00000000000000000000000000000000\nContents: [ZoneTransfer]  ZoneId=3  ReferrerUrl=C:\\Users\\LAB Administrator\\Downloads\\pypykatz-main.zip  \nUser: MELD\\LAB Administrator\n",
+        "process": {
+            "executable": "C:\\Windows\\Explorer.EXE",
+            "name": "Explorer.EXE"
+        },
+        "related": {
+            "hash": [
+                "60e1127e8ae0051f8033b19d7f21f299042effcd",
+                "ccdd674c57bdf74ac0eab9db00b84ddc",
+                "4704841f7bf40b48db63c9d69fad76c7686afe80c9f637a5caefc3b24eaed295"
+            ]
+        },
+        "rule": {
+            "name": "technique_id=T1189,technique_name=Drive-by Compromise"
+        },
+        "winlog": {
+            "api": "wineventlog",
+            "channel": "Microsoft-Windows-Sysmon/Operational",
+            "event_data": {
+                "Contents": "[ZoneTransfer]  ZoneId=3  ReferrerUrl=C:\\Users\\LAB Administrator\\Downloads\\pypykatz-main.zip  ",
+                "User": "MELD\\LAB Administrator"
+            },
+            "event_id": "15",
+            "opcode": "Info",
+            "provider_guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+            "provider_name": "Microsoft-Windows-Sysmon",
+            "task": "File stream created (rule: FileCreateStreamHash)",
+            "user": {
+                "domain": "NT AUTHORITY",
+                "identifier": "S-1-5-18",
+                "name": "SYSTEM",
+                "type": "User"
+            },
+            "version": 2
+        },
+        "filename": "41"
+    },
+    {
+        "event": {
+            "code": "10000",
+            "kind": "event",
+            "provider": "Microsoft-Windows-RestartManager"
+        },
+        "label": 0,
+        "log": {
+            "level": "information"
+        },
+        "message": "Starting session 0 - \u200e2024\u200e-\u200e08\u200e-\u200e27T14:11:01.138098100Z.\n",
+        "winlog": {
+            "api": "wineventlog",
+            "channel": "Application",
+            "event_id": "10000",
+            "opcode": "Info",
+            "provider_guid": "{0888e5ef-9b98-4695-979d-e92ce4247224}",
+            "provider_name": "Microsoft-Windows-RestartManager",
+            "user": {
+                "domain": "MELD",
+                "identifier": "S-1-5-21-981878584-487602356-1169203714-500",
+                "name": "LAB Administrator",
+                "type": "User"
+            },
+            "user_data": {
+                "RmSessionId": "0",
+                "UTCStartTime": "2024-08-27T14:11:01.1380981Z",
+                "xml_name": "RmSessionEvent"
+            }
+        },
+        "filename": "99"
+    },
+    {
+        "event": {
+            "action": "MPSSVC Rule-Level Policy Change",
+            "code": "4957",
+            "kind": "event",
+            "outcome": "failure",
+            "provider": "Microsoft-Windows-Security-Auditing"
+        },
+        "label": 0,
+        "log": {
+            "level": "information"
+        },
+        "message": "Windows Firewall did not apply the following rule:\n\nRule Information:\n\tID:\tRemotePrivNetwork Outbound Default Rule\n\tName:\tRemotePrivNetwork Outbound Default Rule\n\nError Information:\n\tReason:\tRemote Addresses resolved to an empty set.\n",
+        "winlog": {
+            "activity_id": "{1f208f94-3491-0000-a4a9-f4c604e8da01}",
+            "api": "wineventlog",
+            "channel": "Security",
+            "event_data": {
+                "RuleAttr": "Remote Addresses",
+                "RuleId": "RemotePrivNetwork Outbound Default Rule",
+                "RuleName": "RemotePrivNetwork Outbound Default Rule"
+            },
+            "event_id": "4957",
+            "keywords": [
+                "Audit Failure"
+            ],
+            "opcode": "Info",
+            "provider_guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+            "provider_name": "Microsoft-Windows-Security-Auditing",
+            "task": "MPSSVC Rule-Level Policy Change"
+        },
+        "filename": "30"
+    },
+    {
+        "event": {
+            "action": "File creation time changed (rule: FileCreateTime)",
+            "category": [
+                "file"
+            ],
+            "code": "2",
+            "kind": "event",
+            "module": "sysmon",
+            "provider": "Microsoft-Windows-Sysmon",
+            "type": [
+                "change"
+            ]
+        },
+        "file": {
+            "directory": "C:\\Program Files\\JetBrains\\PyCharm Community Edition 2024.2.0.1\\plugins\\python-ce\\helpers\\typeshed\\stubs\\tensorflow\\tensorflow\\core\\protobuf",
+            "extension": "pyi",
+            "name": "tensorflow_server_pb2.pyi",
+            "path": "C:\\Program Files\\JetBrains\\PyCharm Community Edition 2024.2.0.1\\plugins\\python-ce\\helpers\\typeshed\\stubs\\tensorflow\\tensorflow\\core\\protobuf\\tensorflow_server_pb2.pyi"
+        },
+        "label": 0,
+        "log": {
+            "level": "information"
+        },
+        "message": "File creation time changed:\nRuleName: technique_id=T1070.006,technique_name=Timestomp\nProcessGuid: {074624d0-d6e1-66cd-cf05-000000000700}\nProcessId: 3336\nImage: C:\\Users\\LAB Administrator\\Downloads\\pycharm-community-2024.2.0.1.exe\nTargetFilename: C:\\Program Files\\JetBrains\\PyCharm Community Edition 2024.2.0.1\\plugins\\python-ce\\helpers\\typeshed\\stubs\\tensorflow\\tensorflow\\core\\protobuf\\tensorflow_server_pb2.pyi\nPreviousCreationUtcTime: 2024-08-27 13:47:21.400\nUser: MELD\\LAB Administrator\n",
+        "process": {
+            "executable": "C:\\Users\\LAB Administrator\\Downloads\\pycharm-community-2024.2.0.1.exe",
+            "name": "pycharm-community-2024.2.0.1.exe"
+        },
+        "rule": {
+            "name": "technique_id=T1070.006,technique_name=Timestomp"
+        },
+        "winlog": {
+            "api": "wineventlog",
+            "channel": "Microsoft-Windows-Sysmon/Operational",
+            "event_data": {
+                "PreviousCreationUtcTime": "2024-08-27 13:47:21.400",
+                "User": "MELD\\LAB Administrator"
+            },
+            "event_id": "2",
+            "opcode": "Info",
+            "provider_guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+            "provider_name": "Microsoft-Windows-Sysmon",
+            "task": "File creation time changed (rule: FileCreateTime)",
+            "user": {
+                "domain": "NT AUTHORITY",
+                "identifier": "S-1-5-18",
+                "name": "SYSTEM",
+                "type": "User"
+            },
+            "version": 5
+        },
+        "filename": "88"
+    },
+    {
+        "event": {
+            "action": "exited-process",
+            "category": [
+                "process"
+            ],
+            "code": "4689",
+            "kind": "event",
+            "module": "security",
+            "outcome": "success",
+            "provider": "Microsoft-Windows-Security-Auditing",
+            "type": [
+                "end"
+            ]
+        },
+        "label": 1,
+        "log": {
+            "level": "information"
+        },
+        "message": "A process has exited.\n\nSubject:\n\tSecurity ID:\t\tS-1-5-21-981878584-487602356-1169203714-500\n\tAccount Name:\t\tLAB Administrator\n\tAccount Domain:\t\tMELD\n\tLogon ID:\t\t0x2D966E\n\nProcess Information:\n\tProcess ID:\t0x18d4\n\tProcess Name:\tC:\\Windows\\System32\\nslookup.exe\n\tExit Status:\t0x0\n",
+        "process": {
+            "executable": "C:\\Windows\\System32\\nslookup.exe",
+            "name": "nslookup.exe"
+        },
+        "related": {
+            "user": "LAB Administrator"
+        },
+        "user": {
+            "domain": "MELD",
+            "id": "S-1-5-21-981878584-487602356-1169203714-500",
+            "name": "LAB Administrator"
+        },
+        "winlog": {
+            "api": "wineventlog",
+            "channel": "Security",
+            "event_data": {
+                "Status": "0x0",
+                "SubjectDomainName": "MELD",
+                "SubjectLogonId": "0x2d966e",
+                "SubjectUserName": "LAB Administrator",
+                "SubjectUserSid": "S-1-5-21-981878584-487602356-1169203714-500"
+            },
+            "event_id": "4689",
+            "keywords": [
+                "Audit Success"
+            ],
+            "logon": {
+                "id": "0x2d966e"
+            },
+            "opcode": "Info",
+            "provider_guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+            "provider_name": "Microsoft-Windows-Security-Auditing",
+            "task": "Process Termination"
+        },
+        "filename": "59"
+    },
+    {
+        "event": {
+            "action": "File created (rule: FileCreate)",
+            "category": [
+                "file"
+            ],
+            "code": "11",
+            "kind": "event",
+            "module": "sysmon",
+            "provider": "Microsoft-Windows-Sysmon",
+            "type": [
+                "creation"
+            ]
+        },
+        "file": {
+            "directory": "C:\\Program Files\\JetBrains\\PyCharm Community Edition 2024.2.0.1\\plugins\\python-ce\\helpers\\pydev\\pydevd_attach_to_process",
+            "extension": "py",
+            "name": "_check.py",
+            "path": "C:\\Program Files\\JetBrains\\PyCharm Community Edition 2024.2.0.1\\plugins\\python-ce\\helpers\\pydev\\pydevd_attach_to_process\\_check.py"
+        },
+        "label": 0,
+        "log": {
+            "level": "information"
+        },
+        "message": "File created:\nRuleName: -\nProcessGuid: {074624d0-d6e4-66cd-d005-000000000700}\nProcessId: 2728\nImage: C:\\Users\\LAB Administrator\\Downloads\\pycharm-community-2024.2.0.1.exe\nTargetFilename: C:\\Program Files\\JetBrains\\PyCharm Community Edition 2024.2.0.1\\plugins\\python-ce\\helpers\\pydev\\pydevd_attach_to_process\\_check.py\nUser: MELD\\LAB Administrator\n",
+        "process": {
+            "executable": "C:\\Users\\LAB Administrator\\Downloads\\pycharm-community-2024.2.0.1.exe",
+            "name": "pycharm-community-2024.2.0.1.exe"
+        },
+        "winlog": {
+            "api": "wineventlog",
+            "channel": "Microsoft-Windows-Sysmon/Operational",
+            "event_data": {
+                "User": "MELD\\LAB Administrator"
+            },
+            "event_id": "11",
+            "opcode": "Info",
+            "provider_guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+            "provider_name": "Microsoft-Windows-Sysmon",
+            "task": "File created (rule: FileCreate)",
+            "user": {
+                "domain": "NT AUTHORITY",
+                "identifier": "S-1-5-18",
+                "name": "SYSTEM",
+                "type": "User"
+            },
+            "version": 2
+        },
+        "filename": "81"
+    },
+    {
+        "error": {
+            "code": "QUEUE"
+        },
+        "event": {
+            "code": "255",
+            "kind": "event",
+            "module": "sysmon",
+            "provider": "Microsoft-Windows-Sysmon"
+        },
+        "label": 0,
+        "log": {
+            "level": "error"
+        },
+        "message": "Error report:\nID: QUEUE\nDescription: Events dropped from driver queue: RegistryEvent:1\n",
+        "winlog": {
+            "api": "wineventlog",
+            "channel": "Microsoft-Windows-Sysmon/Operational",
+            "event_data": {
+                "Description": "Events dropped from driver queue: RegistryEvent:1"
+            },
+            "event_id": "255",
+            "opcode": "Info",
+            "provider_guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+            "provider_name": "Microsoft-Windows-Sysmon",
+            "user": {
+                "domain": "NT AUTHORITY",
+                "identifier": "S-1-5-18",
+                "name": "SYSTEM",
+                "type": "User"
+            },
+            "version": 3
+        },
+        "filename": "124"
+    }
+]
